@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann | Contact</title>
     <link rel="icon" href="./images/logo.png">
   </head>
@@ -14,9 +15,9 @@
           <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
           <!--Nav Links-->
           <ul>
-            <li>Bio</li>
-            <li>Work</li>
-            <li>Contact</li>
+            <li><a href="./bio.html">Bio</a></li>
+            <li><a href="./index.html">Work</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
       </nav>
     </div>
@@ -25,7 +26,7 @@
     <main>
       <!-- Hero Image -->
       <div>
-        <img src="./images/contact-img/contacthero.svg" alt="Hero Image">
+        <img src="./images/contact-img/contact-hero.jpg" alt="Hero Image">
       </div>
 
       <br>
@@ -54,14 +55,12 @@
         <!-- Input Form -->
         <section>
           <!-- Container for form -->
-          <div>
-            <form action="https://formspree.io/mdogdybe" method="POST">
-              <input type="text" name="name" placeholder="Your Name">
-              <input type="email" name="_replyto" placeholder="Your Email Address">
-              <input type="message" name="message" placeholder="Your Message">
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+          <form action="https://formspree.io/mdogdybe" method="POST">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="_replyto" placeholder="Your Email Address">
+            <input type="message" name="message" placeholder="Your Message">
+            <input type="submit" value="Submit">
+          </form>
         </section>
       </div>
 
@@ -69,21 +68,22 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <img src="./images/logo.png" alt="Logo">
-        <a href="https://www.linkedin.com/in/uxjohann/" target="_blank">
-          <img src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
-        </a>
-        <a href="https://github.com/johannsebastian92" target="_blank">
-          <img src="./images/sm-icons/github.svg" alt="Github Icon">
-        </a>
-        <a href="https://www.instagram.com/j0hannsebastian/" target="_blank">
-          <img src="./images/sm-icons/ig.svg" alt="Instagram Icon">
-        </a>
-        <a href="https://vsco.co/j0hannsebastian/images" target="_blank">
-          <img src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
-        </a>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/uxjohann/" target="_blank">
+            <img src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
+          </a></li>
+          <li><a href="https://github.com/johannsebastian92" target="_blank">
+            <img src="./images/sm-icons/github.svg" alt="Github Icon">
+          </a></li>
+          <li><a href="https://www.instagram.com/j0hannsebastian/" target="_blank">
+            <img src="./images/sm-icons/ig.svg" alt="Instagram Icon">
+          </a></li>
+          <li><a href="https://vsco.co/j0hannsebastian/images" target="_blank">
+            <img src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
+        </a></li>
+      </ul>
     </footer>
   </body>
 </html>
