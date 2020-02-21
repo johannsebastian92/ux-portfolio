@@ -5,63 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimbus Case Study</title>
     <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Yeseva+One&display=swap" rel="stylesheet">
   </head>
   <body>
+    <nav class="nav-bar">
+        <!--Logo-->
+        <a href="./index.html"><img src="./images/logo.svg" alt="Logo"> </a>
+        <!--Nav Links-->
+        <ul class="links">
+          <li><a href="./bio.html">Bio</a></li>
+          <li><a href="./index.html">Work</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Navigation Container -->
-    <div id="navcontainer">
-      <nav>
-          <!--Logo-->
-          <a href="./index.html"><img src="./images/logo.png" alt="Logo"> </a>
-          <!--Nav Links-->
-          <ul>
-            <li><a href="./bio.html">Bio</a></li>
-            <li><a href="./index.html">Work</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-      </nav>
-    </div>
-
-    <header>
-
-      <div> <!-- Container -->
-        <!-- Product Introduction -->
+    <header id="project-header-container">
+      <!-- Product Introduction -->
+      <div>
         <section>
-          <img src="./images/nimbus-images/nimbus-final.svg" alt="Nimbus Final Product">
-          <h1>Nimbus</h1>
-          <p>Nimbus is a cloud storage application which provides users a way to seamlessly create, collaborate, and store their projects. Its core value is to give users all the tools necessary to create inspiring work.</p>
+          <img id="nimbus-final" src="./images/nimbus-images/nimbus-final.svg" alt="Nimbus Final Product">
+          <h1 id="nimbus-title"><strong>Nimbus</strong></h1>
+          <p>Nimbus is a cloud storage application which provides users a way to seamlessly create, collaborate, and store their projects.
+            Its core value is to give users all the tools necessary to create inspiring work.</p>
+          <button class="open-link">
+            <a href="https://invis.io/UVUCSD27XHR" target="_blank"><h3>View Prototype</h3></a>
+          </button>
         </section>
-        <a href="https://invis.io/UVUCSD27XHR" target="_blank"><h3>View Prototype</h3></a>
       </div>
     </header>
 
     <main>
         <!-- Overview -->
-        <section>
-          <!-- Role -->
-          <div>
-              <h1>Overview</h1>
-                <ul><h3>Role</h3></ul>
-                  <li>User Research</li>
-                  <li>UX/UI Design</li>
-                  <li>Branding and Identity</li>
+        <section class="nimbus-phase-container">
+          <h1 class="yeseva-h1 overview-title">Overview</h1>
+
+          <div class="role artifact-spacing">
+            <ul><h2 class="artifact-title title-spacing"><strong>Role</strong></h2></ul>
+              <li>User Research</li>
+              <li>UX/UI Design</li>
+              <li>Branding and Identity</li>
           </div>
 
-          <!-- Duration -->
-          <div>
-              <ul><h3>Project Duration</h3></ul>
-                <li>4 weeks</li>
-          </div>
+          <div class="duration artifact-spacing">
+            <ul><h2 class="artifact-title title-spacing"><strong>Project Duration</strong></h2></ul>
+              <li>4 weeks</li>
+            </div>
 
-          <!-- Tools -->
-          <div>
-              <ul><h3>Tools</h3></ul>
-              <li>InVision, Sketch, Figma, Usability Hub, Google Forms</li>
-          </div>
+          <div class="tools artifact-spacing">
+                <ul><h2 class="artifact-title title-spacing"><strong>Tools</strong></h2></ul>
+                  <li>InVision, Sketch, Figma, Usability Hub, Google Forms</li>
+            </div>
 
-          <!-- Deliverables -->
-          <div>
-              <ul><h3>Deliverables</h3></ul>
+          <div class="deliverables artifact-spacing">
+              <ul><h2 class="artifact-title title-spacing"><strong>Deliverables</strong></h2></ul>
                 <li>Competitive Analysis</li>
                 <li>User Surveys</li>
                 <li>User Stories</li>
@@ -71,104 +69,136 @@
                 <li>Interactive Prototypes</li>
           </div>
 
-          <!-- Product Summary -->
-          <div class="summary">
-              <h3>Problem and Solution</h3>
-                <p>Current cloud storage products on the market talk about wanting to assist users create but most often the price of their subscriptions hinder creators. This is where Nimbus steps up and lives up to its values. Nimbus’ supply users the tools to assist in creation and collaboration without having to purchase expensive plans to access these tools. </p>
-              <h2>64%</h2>
-                <p>of participants use a cloud storage product for school</p>
-              <h2>36%</h2>
-                <p>have issues with the lack of comprhensive free storage plans and prices of subscription</p>
+          <div class="summary artifact-spacing">
+              <h2 class="artifact-title title-spacing"><strong>Problem and Solution</strong></h1>
+                <p>Current cloud storage products on the market talk about wanting to assist users
+                  create but most often the price of their subscriptions hinder creators.
+                  This is where Nimbus steps up and lives up to its values. Nimbus’ supply users the tools to assist in creation and collaboration
+                  without having to purchase expensive plans to access these tools. </p>
+              <!-- Problem Statistics -->
+              <div class="problem-stats stat-spacing">
+                <div class="percent-column">
+                  <h1 class="percent"><strong>59%</strong></h1>
+                    <p>of participants have privacy concerns</p>
+                </div>
+                  <div class="percent-column">
+                    <h1 class="percent"><strong>36%</strong></h1>
+                      <p>have issues with the  prices of subscription</p>
+                  </div>
+              </div>
           </div>
         </section>
 
-        <br>
-
         <!-- Research -->
-        <section>
-          <h1>Research</h1>
+        <section class="nimbus-phase-container">
+          <h1 class="yeseva-h1 overview-title">Research</h1>
           <!-- User Surverys -->
+          <h2 class="artifact-spacing"><strong>User Surveys</strong></h2>
+          <!-- Audience -->
+          <h3 class="artifact-title"><strong>Audience</strong></h3>
+          <div class="audience stat-spacing">
+                <div class="audience-stat1 percent-column">
+                  <h1 class="percent"><strong>64%</strong></h1>
+                    <p>of participants use a cloud storage product for school</p>
+                </div>
+                <div class="audience-stat2 percent-column">
+                  <h1 class="percent"><strong>77%</strong></h1>
+                    <p>of participants use a cloud storage product for work</p>
+                </div>
+              </div>
+          <!-- Target Audience Summary -->
           <div>
-            <h2>User Surveys</h2>
-            <!-- Audience -->
-            <div>
-              <h3>Target Audeience</h3>
-              <!-- Problem Percent 1 -->
-              <div>
-                <h1>64%</h1>
-                <p>of participants use a cloud storage product for school</p>
+                  <p>Surveys revealed that student and organizations who collaborate regularly will be the target audience.</p>
+                  <br>
+                  <p>A deeper dive into the demographics support this as 86% of participants either work full or part time. And a combined 93% of participants having either a Bachelors or Graduate degree, or have some college experience. </p>
+                  <br>
+                  <p>The last supporting point is when asked who would the participants collaborate with, 93% responded with school mates and 79% responeded with co-workers.</p>
               </div>
-              <!-- Problem Percent 2 -->
-              <div>
-                <h1>77%</h1>
-                <p>of participants use a cloud storage product for work</p>
-              </div>
-              <p>Surveys revealed that student and organizations who collaborate regularly will be the target audience.</p>
-              <p>A deeper dive into the demographics support this as 86% of participants either work full or part time. And a combined 93% of participants having either a Bachelors or Graduate degree, or have some college experience. </p>
-              <p>The last supporting point is when asked who would the participants collaborate with, 93% responded with school mates and 79% responeded with co-workers.</p>
-            </div>
 
-            <!-- Features -->
-            <div>
-              <h3>Features</h3>
-              <p>Surveys also revealed what features the product should contain as I had each participant rate features the client wanted included.</p>
-              <!-- Features Percent -->
-              <div>
-                <h1>89%</h1>
-                <p>believe that sharing is an essential feature</p>
-              </div>
-              <!-- Features Percent -->
-              <div>
-                <h1>4.3/5</h1>
-                <p>Average score for “Creating Content” as a feature</p>
-              </div>
-              <!-- Features Percent -->
-              <div>
-                <h1>4.2/5</h1>
-                <p>Average score for “Uploading files from a mobile/desktop”</p>
-              </div>
-              <!-- Features Percent -->
-              <div>
-                <h1>4.5/5</h1>
-                <p>Average score for “Organizing Content” as a feature</p>
-              </div>
-            </div>
+          <br>
+          <!-- Features -->
+          <div>
+            <h3 class="artifact-title title-spacing"><strong>Features</strong></h3>
+            <p>Surveys also revealed what features the product should contain as I had each participant rate features the client wanted included.</p>
+            <br>
 
-            <a href="https://forms.gle/bokthCff9zXb7hZV8" target="_blank"><h3>Take the Survey</h3></a>
+            <div class="features stat-spacing">
+                    <div class="feature1 problem-stats">
+                      <div class="percent-column">
+                        <h1 class="percent"><strong>89%</strong></h1>
+                        <p>believe that sharing is an essential feature</p>
+                      </div>
+                    </div>
+                    <div class="feature2 problem-stats">
+                      <div class="percent-column">
+                        <h1 class="percent"><strong>4.3/5</strong></h1>
+                        <p>Average score for “Creating Content” as a feature</p>
+                      </div>
+                    </div>
+                  </div>
+            <div class="features stat-spacing">
+                    <div class="feature3 problem-stats">
+                      <div class="percent-column">
+                        <h1 class="percent"><strong>4.2/5</strong></h1>
+                        <p>Average score for “Uploading files from a mobile/desktop”</p>
+                      </div>
+                    </div>
+                    <div class="feature4 problem-stats">
+                      <div class="percent-column">
+                        <h1 class="percent"><strong>4.5/5</strong></h1>
+                        <p>Average score for “Organizing Content” as a feature</p>
+                      </div>
+                    </div>
+                  </div>
+
+            <button class="open-link">
+                    <a href="https://forms.gle/bokthCff9zXb7hZV8" target="_blank"><h3>Take the Survey</h3></a>
+                  </button>
           </div>
 
           <!-- Competitive Analysis -->
           <div>
-            <h2>Competitive Analysis</h2>
-            <img src="./images/nimbus-images/google-drive-icon.svg" alt="Google Drive Logo">
-            <img src="./images/nimbus-images/dropbox-icon.svg" alt="Dropbox Logo">
+            <h2 class="artifact-spacing"><strong>Competitive Analysis</strong></h2>
+            <div id="competitive-img">
+              <img id="drive-img" src="./images/nimbus-images/google-drive-icon.svg" alt="Google Drive Logo">
+              <img src="./images/nimbus-images/dropbox-icon.svg" alt="Dropbox Logo">
+            </div>
+            <br>
             <p>After performing a SWOT analysis I was able to identify the key opprotunity. The solution is to live up to values that encourages individuals to create amazing projects.</p>
-            <p>Just like the survey, the competitive analysis confirms that the prices of subscriptions are the main issue. By utilizing the “Freeium” model, which is a pricing strategy where a product and all its features are free of charge; allows the user to switch and use Nimbus without feeling the pressure to purchase subscriptions. Thus encouraging users to use the product frequently</p>
-            <a href="https://docs.google.com/document/d/1oZzZALblLGOlAzHx6pq2tDr6sGTW75s-jNKw1UeVZjE/edit?usp=sharing" target="_blank"><h3>View the Competitive Analysis</h3></a>
+            <br>
+            <p>Just like the survey, the competitive analysis confirms that the prices of subscriptions are the main issue. By utilizing the “Freeium” model, which is a pricing strategy where a product and all its features are free of charge; allows the user to switch and use Nimbus without feeling the pressure to purchase subscriptions. Thus encouraging users to use the product frequently.</p>
+            <button class="open-link">
+              <a href="https://docs.google.com/document/d/1oZzZALblLGOlAzHx6pq2tDr6sGTW75s-jNKw1UeVZjE/edit?usp=sharing" target="_blank"><h3>View the Competitive Analysis</h3></a>
+            </button>
           </div>
 
           <!-- Personas -->
           <div>
-            <h2>User Personas</h2>
+            <h2 class="artifact-spacing"><storng>User Personas</strong></h2>
             <!-- Julia Persona -->
             <div>
-              <h3>Julia</h3>
-              <p>22 years old graduate student at San Diego State University</p>
+              <div class="persona-overview">
+                <h3 class="artifact-title title-spacing"><strong>Julia</strong></h3>
+                <p>22 years old graduate student at San Diego State University</p>
+
               <img src="./images/nimbus-images/julia.svg" alt="Julia Persona">
               <blockquote>“Sharing my thought process is a part of how I work”</blockquote>
+            </div>
               <!-- Goals and Frustrations -->
-              <div>
-                <h3>Goals</h3>
+              <br>
+              <div class="motivation">
+                <h3 class="persona-spacing"><strong>Goals</strong></h3>
                   <ul>
                     <li>Collaborate with her peers in a safe and secure space</li>
                     <li>Share her projects to her social media profiles</li>
                     <li>View what work has been done in projects and by whom</li>
                   </ul>
-                <h3>Frustrations</h3>
+                <br>
+                <h3 class="persona-spacing"><strong>Frustrations</strong></h3>
                   <ul>
                     <li>Not being able to organize her projects appropriately</li>
                     <li>Cloud storage apps either lack the tools needed for her work or are too expensive for a college student</li>
-                  </ul
+                  </ul>
               </div>
           </div>
         </section>
@@ -176,17 +206,20 @@
         <br>
 
         <!-- IA -->
-        <section>
-          <h1>Information Architecture</h1>
+        <section class="nimbus-phase-container">
+          <h1 class="yeseva-h1">Information</h1><br>
+          <h1 class="yeseva-h1 overview-title">Architecture</h1>
           <!-- Flows -->
           <div>
             <p>Once the data has been analyzed and the personas have been created, I utilized the Pareto Principle to create high priority user stories. Meaning that 80% of the product’s users, use 20% of the features. These stories were translated into user flows to best show how the user would execute each task. Both artifacts ensure that the project stays within a consistent scope.</p>
-            <a href="https://docs.google.com/spreadsheets/d/168-c0uesODb4xkwZblFkGnacxsfdNta7mySkMvc99X4/edit?usp=sharing" target="_blank"><h3>View User Stories</h3></a>
+            <button class="open-link">
+              <a href="https://docs.google.com/spreadsheets/d/168-c0uesODb4xkwZblFkGnacxsfdNta7mySkMvc99X4/edit?usp=sharing" target="_blank"><h3>View User Stories</h3></a>
+            </button>
             <h3>As a user, I want to create content</h3>
-            <img src="./images/nimbus-images/content-creation.svg" alt="Content Creation Flow">
+            <img class="user-flow-img" src="./images/nimbus-images/content-creation.svg" alt="Content Creation Flow">
             <br>
             <h3>As a user, I want to share my project</h3>
-            <img src="./images/nimbus-images/share.svg" alt="Share Flow">
+            <img class="user-flow-img" src="./images/nimbus-images/share.svg" alt="Share Flow">
           </div>
           <!-- Low Fidelity Wireframes -->
           <div>
@@ -200,102 +233,143 @@
         <br>
 
         <!-- Testing -->
-        <section>
-          <h1>Testing</h1>
+        <section class="nimbus-phase-container">
+          <h1 class="yeseva-h1 overview-title">Testing</h1>
           <p>Once the low fidelity wireframes were completed, I conducted a usability test on 3 individuals. The tasks that were tested were signing up for an account, adding content, and organizing content. </p>
+          <br>
+
           <!-- Before Testing -->
           <div>
-              <h2>Before Testing</h2>
-              <img src="./images/nimbus-images/before-mobile.svg" alt="Before Testing">
+              <h3 class="artifact-title"><strong>Before</strong></h2>
+                <img class="testing-img" src="./images/nimbus-images/before-mobile.svg" alt="Before Testing">
           </div>
+
+          <br>
+
           <!-- After Testing -->
           <div>
-              <h2>After Testing</h2>
-              <img src="./images/nimbus-images/after-mobile.svg" alt="After Testing">
+              <h3 class="artifact-title"><strong>After</strong></h3>
+                <img class="testing-img" src="./images/nimbus-images/after-mobile.svg" alt="After Testing">
           </div>
-          <h3>Familiar</h3>
-          <p>Metrics indicate that users were very familar with how Nimbus worked . For each task there was 100% completion rate for all participants and low task time indicates users understood how the product functioned. </p>
-          <h3>Language</h3>
-          <p>The main issue that users had when asked about their experience was the language used. 'Sign In' and 'Sign Up' looked similar with at a glance. And in the homepage, words like 'Home', and 'Files' were vague and could have used more contrast. </p>
+
+          <h3 class="artifact-title title-spacing">Testing Results</h3>
+            <p>Testing metrics indicate a positive outlook on the functionality of the application.
+              Each participant was able to complete the task with little to no errors.
+              The average task time per assignment is 7.7 seconds.
+              In addition, participants rated each task highly with the lowest average being a 4.3 out 5 for organizing content.
+            </p>
+
+          <br>
+
+          <h3 class="artifact-title title-spacing">Structure</h3>
+            <p>Other than testing metrics, user comments indicate they are familar with the structure of the app.
+              With words like “similar” “straight forward” and “understandable” being used when asked about their opinion of the layout of the app.
+            </p>
+
+          <br>
+
+          <h3 class="artifact-title title-spacing">Language</h3>
+            <p>The main issue that users had when asked about their experience was the language used.
+              'Sign In' and 'Sign Up' looked similar with at a glance.
+              And in the homepage, words like 'Home', and 'Files' were vague and could have used more contrast.
+            </p>
         </section>
 
         <br>
 
         <!-- Visual Design -->
-        <section>
-          <h1>Visual Design</h1>
-          <p>“Head in the clouds” is the phrase that best describes the Nimbus brand. We want the user to feel inspired to create great work throughout the day and night. That is why we use vibrant and diverse colors with simple typography. </p>
+        <section class="nimbus-phase-container">
+          <h1 class="yeseva-h1 overview-title">Visual Design</h1>
+          <p>“Head in the clouds” is the phrase that best describes the Nimbus brand.
+            We want the user to feel inspired to create great work throughout the day and night.
+            That is why we use vibrant and diverse colors with simple typography. </p>
+
           <!-- Logo -->
-          <div>
-            <h2>Logo</h2>
+          <div id="nimbus-logo">
+            <h2 class="title-spacing"><strong>Logo</strong></h2>
             <p>The goal for the the design of the logo is independence. I wanted a logo where the icon and wordmark are able to stand on their own without the other. This allows for versitlity in ways to use the design. </p>
-            <img src="./images/nimbus-images/black-logo.svg" alt="Final Black Logo">
             <br>
-            <img src="./images/nimbus-images/white-logo.svg" alt="Final White Logo">
+            <img class="logo-img title-spacing" src="./images/nimbus-images/white-logo.svg" alt="Final Black Logo">
+            <br>
+            <img class="logo-img title-spacing" src="./images/nimbus-images/black-logo.svg" alt="Final White Logo">
           </div>
+
+          <br>
           <!-- Color Palette -->
           <div>
-            <h2>Color Palette</h2>
-            <img src="./images/nimbus-images/colors.svg" alt="Color Palette">
+            <h2 class="title-spacing"><strong>Color Palette</strong></h2>
+            <img id="nimbus-colors" src="./images/nimbus-images/colors.svg" alt="Color Palette">
           </div>
+
+          <br>
           <!-- Type -->
           <div>
-            <h2>Typography</h2>
-            <img src="./images/nimbus-images/type.svg" alt="Typography">
+            <h2 class="title-spacing"><strong>Typography</strong></h2>
+            <img id="type-img" src="./images/nimbus-images/type.svg" alt="Typography">
           </div>
-          <a href="https://drive.google.com/drive/folders/1_M9dfwk-c0UnFsSSGQiW2hk_KyjTSpkW?usp=sharing"><h3>View Style Guide</h3></a>
+          <button class="open-link">
+            <a href="https://drive.google.com/drive/folders/1_M9dfwk-c0UnFsSSGQiW2hk_KyjTSpkW?usp=sharing"><h3>View Style Guide</h3></a>
+          </button>
         </section>
 
         <br>
 
         <!-- High Fidelity -->
-        <section>
-          <h1>High Fidelity</h1>
+        <section class="nimbus-phase-container">
+          <h1 class="yeseva-h1 overview-title">High Fidelity</h1>
           <p>High fidelity mockups were constructed the research, information architecture, and visual design. The key concepts of Nimbus were composed to create an efficient user experience. </p>
+
           <!-- Mobile Prototype -->
-          <div>
-            <img src="./images/nimbus-images/mobile-proto.svg" alt="Mobile Prototype">
+          <img id="mobile-proto-img" src="./images/nimbus-images/mobile-proto.svg" alt="Mobile Prototype">
+          <button class="open-link">
             <a href="https://invis.io/UVUCSD27XHR" target="_blank"><h3>View Prototype</h3></a>
-          </div>
+          </button>
         </section>
 
         <br>
 
         <!-- Conclusion -->
-        <section>
-          <h1>Conclusion</h1>
-          <p>From ideation to completion, Nimbus has undergone many different changes. I was able to take an indefinite idea without a target audience, product name or brand, or even a problem and ended with a well-defined solution. Nimbus offers an alternative to other cloud storage apps by taking the main issue users have with the competition and directly addressing that. </p>
-        </section>
+        <section class="nimbus-phase-container">
+          <h1 class="yeseva-h1 overview-title">Conclusion</h1>
+          <p>From ideation to completion, Nimbus has undergone many different changes.
+            I was able to take an indefinite idea without a target audience, product name or brand, or even a problem and ended with a well-defined solution.
+            Nimbus offers an alternative to other cloud storage apps by taking the main issue users have with the competition and directly addressing that.
+          </p>
 
-        <br>
+          <br>
 
-        <!-- Reflection -->
-        <section>
-          <h1>Reflection</h1>
+          <!-- Reflection -->
+          <h1 class="yeseva-h1 overview-title">Reflection</h1>
           <p>With the benefit of hindsight, I would have allocated more time into developing features that I believe would have separated Nimbus from the competition. User surveys indicated a smaller but third target audience. A target audience that uses cloud storage services for personal uses. </p>
+          <br>
           <p>Developing features for this target audience would have required more time allocated to research and figure out what their hobbies are and how it relates to their usage of cloud storage apps. However, due to the time constraint, I decided to focus on the more prominent target audience.</p>
+          <br>
           <p>To create a competitive product it is necessary to perform great research. I would have loved to spend more time interviewing and picking the brain of this third audience.</p>
+
+          <a href="#navcontainer"><h3 id="back-to-top">Back to Top</h3></a>
         </section>
+
+
     </main>
 
-      <a href="#navcontainer"><h3>Back to Top</h3></a>
+
 
       <br>
 
       <footer>
-          <img src="./images/logo.png" alt="Logo">
+          <img src="./images/logo.svg" alt="Logo">
           <ul>
             <li><a href="https://www.linkedin.com/in/uxjohann/" target="_blank">
-              <img src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
+              <img class="sm-icons" src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
             </a></li>
             <li><a href="https://github.com/johannsebastian92" target="_blank">
-              <img src="./images/sm-icons/github.svg" alt="Github Icon">
+              <img class="sm-icons" src="./images/sm-icons/github.svg" alt="Github Icon">
             </a></li>
             <li><a href="https://www.instagram.com/j0hannsebastian/" target="_blank">
-              <img src="./images/sm-icons/ig.svg" alt="Instagram Icon">
+              <img class="sm-icons" src="./images/sm-icons/ig.svg" alt="Instagram Icon">
             </a></li>
             <li><a href="https://vsco.co/j0hannsebastian/images" target="_blank">
-              <img src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
+              <img class="sm-icons" src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
           </a></li>
         </ul>
       </footer>

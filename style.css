@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #202124;
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  /*font-family: 'Yeseva One', cursive;*/ /*Saving for later*/
+  font-size: 1.6rem;
+  line-height: 26px;
+}
+
+/* Font Sizes*/
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.yeseva-h1{
+  font-size: 4rem;
+  font-family: 'Yeseva One', cursive;
+}
+
+.yeseva-h2 {
+  font-size: 3rem;
+  font-family: 'Yeseva One', cursive;
+}
+
+.yeseva-h3{
+  font-size: 2rem;
+  font-family: 'Yeseva One', cursive;
+}
+
+strong {
+  font-weight: bold;
+}
+
+header {
+  height: 100vh;
+}
+
+header #hero-img {
+  background-image: url("./images/header-img.png");
+  background-position: center;
+  background-size: cover;
+  float:left;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+header #hero-text {
+  left: 50%;
+  margin-top: 4rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+#hero-text h2 {
+  padding-bottom: 2rem;
+}
+
+header #view-work {
+  bottom: 0;
+  left: 50%;
+  position:absolute;
+  text-align:center;
+  transform: translate(-50%, -50%);
+}
+
+span.intro {
+  opacity: 0.87;
+}
+
+.intro-emphasis:hover {
+  color: #FF5964;
+}
+
+strong.intro-emphasis {
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+
+/* Styling navigation links */
+.nav-bar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+#view-work p {
+  text-decoration: none;
+}
+
+header .links {
+  display: flex;
+  flex-direction: row;
+}
+
+.links {
+  list-style-type: none; /* Whether there is a bullet or not */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #ff0000;*/
+}
+
+.links li a {
+  color: white;
+  float: left;
+  padding: .8rem 1.6rem;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #E0ACD5;
+}
+
+li a:active {
+  color: #E0ACD5;
+}
+
+/* Styling <a> going to Case Studies*/
+.link-to-work {
+  color: white;
+  text-decoration: none;
+}
+
+.link-to-work:hover {
+  color: #5FBFF9;
+}
+
+/* Styling Rectangle Button */
+button {
+  background-color: #202124;
+  border: 1px solid white;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.8rem;
+  height: 50px;
+  width: 290px;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  color: #228CDB;
+  background-color: #228CDB;
+}
+
+
+/* Styling the Circle buttons */
+.circles {
+  background-color: inherit;
+  border-radius: 50%;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.8rem;
+  height: 110px;
+  width:110px
+}
+
+/* Case Studies Title */
+.work {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.case-study-title {
+  padding-bottom: 2rem;
+}
+
+#nimbus-study-container {
+margin: 0 2rem;
+padding-bottom: 4rem;
+}
+
+.home-responsive-dt {
+  height: auto;
+  margin: 0 2rem;
+  max-width: 100%;
+  padding: 4rem 0;
+  width: 80%;
+}
+
+.read-case-study-button {
+  margin: 3rem 2rem 0 2rem;
+}
+
+/*Looking for*/
+#looking-for{
+background-image: url("./images/looking-for.png");
+background-position: center;
+background-size: cover;
+float:left;
+height: 80vh;
+position: relative;
+width: 100%;
+}
+
+#call-to-action {
+  left: 50%;
+  position: absolute;
+  text-align: left;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.looking-for-title {
+  padding-bottom: 1.5rem;
+}
+
+#call-to-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  position: absolute;
+  text-align: left;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  align-items: center;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul li {
+  padding: 0 1.2rem;
+  align-items: center;
+}
+
+.sm-icons {
+height: 2.5rem;
+width: 2.5rem;
+}
+
+/* ------ Nimbus Case Study Styling ------ */
+
+/* Styling navigation links */
+#project-header-container {
+  margin: 0 2rem;
+  height: auto;
+}
+
+nav .links {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Styling Project Introduction */
+#nimbus-final {
+  height: auto;
+  margin: 0 2rem;
+  max-width: 100%;
+  padding: 4rem 0;
+  width: 90%;
+}
+
+#nimbus-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.open-link {
+  margin: 3rem 2rem 5rem 2rem;
+}
+
+.overview-title {
+  margin-bottom: 4rem;
+}
+
+.title-spacing {
+  margin-bottom: 2rem;
+}
+
+.artifact-spacing {
+  margin-bottom: 5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.artifact-title {
+  font-size: 2.5rem
+}
+
+.stat-spacing {
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  align-items: baseline;
+}
+
+.percent-column {
+  float: none;
+  width: 90%;
+  margin: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.percent {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.percent-column p {
+  text-align: center;
+}
+
+
+.competitive-img {
+  align-items: center;
+}
+
+#drive-img{
+  height: 14rem;
+  width: 16rem;
+}
+
+.persona-overview {
+  text-align: center;
+}
+
+blockquote {
+  float: right;
+  margin-top: 3rem;
+  text-align: center;
+  width: 50%;
+}
+
+.motivation ul {
+  padding-left: 2rem;
+}
+
+.motivation li {
+  list-style: circle;
+}
+
+.persona-spacing {
+  margin-bottom: 1rem;
+}
+
+
+.user-flow-img {
+  height: auto;
+  max-width: 100%;
+  padding: 2.5rem 0 3rem 0;
+}
+
+
+.testing-img {
+  padding: 2rem 0 2rem 0;
+  height: auto;
+  width: 100%;
+}
+
+
+#nimbus-logo{
+  margin: 5rem 0 0 0;
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#nimbus-colors {
+  width: 100%;
+  height: auto;
+}
+
+#type-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#mobile-proto-img {
+  height: auto;
+  margin: 3.5rem 9rem 0 9rem;
+  max-width: 15rem;
+  width: 100%;
+}
+
+#back-to-top {
+  color: white;
+  margin: 4rem 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+#back-to-top:hover {
+  color: #5FBFF9;
+}
+
+.nimbus-phase-container {
+  margin: 6rem 2rem 0 2rem;
+}

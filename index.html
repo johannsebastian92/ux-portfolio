@@ -2,88 +2,94 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann Merto | Product Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Yeseva+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <!--header image-->
-      <div> <img src="./images/header-img.jpg" alt="header-img"> </div>
-
-      <!-- Navigation -->
-      <div>
-        <nav>
+        <!--header image-->
+        <div id="hero-img">
+        <!-- Navigation -->
+        <nav class="nav-bar">
           <!-- Logo -->
-          <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
-          <!--Nav Links-->
-          <ul>
-            <li><a href="./bio.html">Bio</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
+          <a href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
+            <!--Nav Links-->
+          <ul class="links">
+              <li><a href="./bio.html">Bio</a></li>
+              <li><a href="#case-studies">Work</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
+        <!--Introduction-->
+        <div id="hero-text">
+          <h2 class="yeseva-h2">Johann Sebastian</h2>
+          <p><span class="intro">Hello there! I’m a</span><strong class="intro-emphasis"> Product Designer </strong>located in <strong class="intro-emphasis">San Francisco</strong>
+            <span class="intro">who is infinitely enthusiastic about learning the whys and hows of user behavior</span></p>
+        </div>
+
+        <div id="view-work">
+          <a class="link-to-work" href="#case-studies">
+            <p>View My Work</p>
+            <div><img src="./images/Polygon1.svg"></div>
+          </a>
+        </div>
       </div>
-
-      <!--Introduction-->
-      <section>
-        <h1> <strong>Johann Sebastian</strong></h1>
-        <h2>Hello there! I’m a <strong>Product Designer</strong> located in <strong>San Francisco</strong> who is infinitely enthusiastic about learning the whys and hows of user behavior.</h2>
-      </section>
-
-
-      <a href="#work"><h3>View My Work</h3></a>
     </header>
-
-<br>
 
     <!-- Case Studies -->
     <main id="work">
-      <h1>Work</h1>
-      <!--Work-->
-      <div>
+        <h2 class="yeseva-h2 work">Case Studies</h2>
           <!-- Nimbus Case Study -->
-        <section>
-            <h2>Nimbus</h2>
-              <p>Cloud storage app providing seamless collaboration, content creation, and sharing.</p>
-              <img src="./images/nimbus-desktop.svg">
-              <img src="./images/nimbus-mobile.svg">
-              <h3>Role</h3>
+        <section id="nimbus-study-container">
+            <h2 class="case-study-title"><strong>Nimbus</strong></h2>
+            <p>Nimbus is a cloud storage application  designed for students and organizations to help create and amazing projects.</p>
+            <img class="home-responsive-dt" src="./images/nimbus-desktop.svg">
+            <!--<img src="./images/nimbus-mobile.svg"> -->
+            <h3><strong>Role</strong></h3>
                 <ul>
                   <li>User Research</li>
                   <li>UX/UI Design</li>
                   <li>Branding</li>
                 </ul>
-              <a href="./project.html"><h3> Read Case Study</h3></a>
+              <button class="read-case-study-button">
+              <a href="./project.html">Read Case Study</a>
+              </button>
           </section>
-      </div>
-    <main>
 
-<br>
 
-    <!--Looking for-->
-    <section>
-      <img src="./images/looking-for.jpg">
-      <h1>I am looking for...</h1>
-        <p>I am a passionate designer who loves to listen and learn more about people. I take this passion and apply it to my grasp of UX concepts to deliver functional and delightful experiences for the user. I am looking to join a team where I can contribute immediately. I will relocate for an awesome opprotunity!</p>
-        <a href="./bio.html"><h3>Meet Johann</h3></a>
-        <a href="resumelink"><h3>Resume</h3></a>
-    </section>
+      <!--Looking for-->
+      <section id="looking-for">
+        <!--<img src="./images/looking-for.jpg">-->
+        <div id="call-to-action">
+          <h2 class="yeseva-h2 looking-for-title">I am looking for...</h2>
+          <p>I am a passionate designer who loves to listen and learn more about people. I take this passion and apply it to my grasp of UX concepts to deliver functional and delightful experiences for the user. I am looking to join a team where I can contribute immediately. I will relocate for an awesome opprotunity!</p>
+        </div>
+        <div id="call-to-action-buttons">
+          <button class="circles"><a href="./bio.html">Meet Johann</a></button>
+          <button class="circles"><a href="resumelink">Resume</a></button>
+        </div>
+      </section>
+
+    </main>
 
     <footer>
-        <img src="./images/logo.png" alt="Logo">
+        <img src="./images/logo.svg" alt="Logo">
         <ul>
           <li><a href="https://www.linkedin.com/in/uxjohann/" target="_blank">
-            <img src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
+            <img class="sm-icons" src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
           </a></li>
           <li><a href="https://github.com/johannsebastian92" target="_blank">
-            <img src="./images/sm-icons/github.svg" alt="Github Icon">
+            <img class="sm-icons" src="./images/sm-icons/github.svg" alt="Github Icon">
           </a></li>
           <li><a href="https://www.instagram.com/j0hannsebastian/" target="_blank">
-            <img src="./images/sm-icons/ig.svg" alt="Instagram Icon">
+            <img class="sm-icons" src="./images/sm-icons/ig.svg" alt="Instagram Icon">
           </a></li>
           <li><a href="https://vsco.co/j0hannsebastian/images" target="_blank">
-            <img src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
+            <img class="sm-icons" src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
         </a></li>
       </ul>
     </footer>
