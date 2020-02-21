@@ -5,45 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johann | Contact</title>
     <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Yeseva+One&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <!-- Navigation -->
-    <div>
-      <nav>
-          <!--Logo-->
-          <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
-          <!--Nav Links-->
-          <ul>
-            <li><a href="./bio.html">Bio</a></li>
-            <li><a href="./index.html">Work</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-      </nav>
-    </div>
+    <nav class="nav-bar">
+        <!--Logo-->
+        <a href="./index.html"><img src="./images/logo.svg" alt="Logo"> </a>
+        <!--Nav Links-->
+        <ul class="links">
+          <li><a href="./bio.html">Bio</a></li>
+          <li><a href="./index.html">Work</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
 
     <main>
       <!-- Hero Image -->
-      <div>
-        <img src="./images/contact-img/contact-hero.jpg" alt="Hero Image">
-      </div>
+        <img id="contact-hero" src="./images/contact-img/contact-hero.svg" alt="Hero Image">
 
       <br>
 
-      <!-- Resume -->
-      <section>
-        <!-- Resume container -->
-        <div>
+        <!-- Resume -->
+        <button class="circles resume-centering">
           <a href="#">Resume</a>
-        </div>
-      </section>
+        </button>
 
       <br>
-
       <!--Looing for -->
       <section>
-        <h1>I am looking ...</h1>
+        <h1 class="yeseva-h1 overview-title">I am looking...</h1>
         <p>for a team where I contribute my unique work and educational experience, the skills I acquired in my time working with a Senior Product Designer, and more importantly my personality. My ability to empathize with others, learn quickly and adjust, as well as my propensity to grind and work hard.</p>
       </section>
 
@@ -51,15 +45,18 @@
 
       <!-- Call to Action -->
       <div>
-        <h3>Lets connect and talk user experience over coffee.</h3>
+        <h3 class="yeseva-h3 call-to-action">Lets connect and talk user experience over coffee.</h3>
         <!-- Input Form -->
         <section>
           <!-- Container for form -->
           <form action="https://formspree.io/mdogdybe" method="POST">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="_replyto" placeholder="Your Email Address">
-            <input type="message" name="message" placeholder="Your Message">
-            <input type="submit" value="Submit">
+            <input class="text-input" type="text" name="name" placeholder="Your Name">
+            <br>
+            <input class="text-input" type="email" name="_replyto" placeholder="Your Email Address">
+            <br>
+            <textarea name="message" placeholder="Type Your Message Here"></textarea>
+            <br>
+            <input class="submit" type="submit" value="SUBMIT">
           </form>
         </section>
       </div>
@@ -69,19 +66,19 @@
     </main>
 
     <footer>
-        <img src="./images/logo.png" alt="Logo">
+        <img src="./images/logo.svg" alt="Logo">
         <ul>
           <li><a href="https://www.linkedin.com/in/uxjohann/" target="_blank">
-            <img src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
+            <img class="sm-icons" src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
           </a></li>
           <li><a href="https://github.com/johannsebastian92" target="_blank">
-            <img src="./images/sm-icons/github.svg" alt="Github Icon">
+            <img class="sm-icons" src="./images/sm-icons/github.svg" alt="Github Icon">
           </a></li>
           <li><a href="https://www.instagram.com/j0hannsebastian/" target="_blank">
-            <img src="./images/sm-icons/ig.svg" alt="Instagram Icon">
+            <img class="sm-icons" src="./images/sm-icons/ig.svg" alt="Instagram Icon">
           </a></li>
           <li><a href="https://vsco.co/j0hannsebastian/images" target="_blank">
-            <img src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
+            <img class="sm-icons" src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
         </a></li>
       </ul>
     </footer>

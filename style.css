@@ -429,3 +429,73 @@ blockquote {
 .nimbus-phase-container {
   margin: 6rem 2rem 0 2rem;
 }
+
+/* Contact Page Styling */
+
+#contact-hero {
+  border-radius: 80%;
+  width: 28.8rem;
+  height: auto;
+  /* Centers Image*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+main {
+  padding: 0 2rem;
+}
+
+.resume-centering {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.call-to-action {
+  padding-bottom: 2.5rem;
+}
+
+.text-input {
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.7rem;
+  height: 6rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  width: 100%
+}
+
+textarea {
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.7rem;
+  height: 12rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  padding-bottom: 8rem;
+  padding-left: 1rem;
+  overflow: auto;
+  overflow: break-word
+}
+
+.submit {
+  background-color: #228CDB;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  height: 6rem;
+  margin-bottom: 2rem;
+  width: 100%
+}
