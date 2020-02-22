@@ -5,107 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Johann</title>
     <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Yeseva+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div>
-      <!--Logo-->
-      <nav>
-          <a href="./index.html"><img src="./images/logo.png" alt="Logo"></a>
-          <!--Nav Links-->
-          <ul>
-            <li><a href="./bio.html">Bio</a></li>
-            <li><a href="./index.html">Work</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-      </nav>
-    </div>
+    <nav class="nav-bar">
+        <!--Logo-->
+        <a href="./index.html"><img src="./images/logo.svg" alt="Logo"> </a>
+        <!--Nav Links-->
+        <ul class="links">
+          <li><a href="./bio.html">Bio</a></li>
+          <li><a href="./index.html">Work</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
-      <!-- Hero Image -->
-      <div>
-        <img src="./images/bio-img/hero-img.jpg" alt="Hero Image">
-      </div>
-
-      <br>
-
-      <!-- JavaScript here -->
-      <div>
-        <h1>
+      <!-- Typing Element -->
+      <div class="about-me yeseva-h2">
+        <h2>
           I'm Johann and
           <strong id="typing-element"></strong>
          &nbsp;
-        </h1>
+       </h2>
       </div>
 
+      <!-- Hero Image -->
+      <img class="responsive-hero" src="./images/bio-img/hero-img.png" alt="Hero Image">
+
       <br>
 
-      <!-- Strengths -->
+      <!-- Biography -->
       <section>
-        <h2>My Greatest Strengths</h2>
-        <p>From the very beginning, I wanted my life to be about helping others. The experience of being born in the Philippines and seeing the everyday struggles of people there and the lack of solutions shaped me. These experiences helped develop my greatest ability, empathy. Being able to see understand people on a deeper level. </p>
-        <p>At 5 years old, I moved to Guam where my interest in design and solving problems began to emerge, albeit in an innocent way. Whether it was drawing, playing games that challenged my ability to solve puzzles and problems like the Rubix Cube, card games, or old computer games that did just that. My curiosity getting the best of me and asking my parents who were a Chemist and Radiologist what, why, and how they do their job. The spirit of inquiry was there.</p>
+        <h2 class="bio-header title-spacing">My Greatest Strengths</h2>
+          <p>From the very beginning, I wanted my life to be about helping others.
+            The experience of being born in the Philippines and seeing the everyday struggles of people there and the lack of solutions shaped me.
+            These experiences helped develop my greatest ability, empathy. Being able to see understand people on a deeper level. </p>
+
+            <br>
+
+          <p>At 5 years old, I moved to Guam where my interest in design and solving problems began to emerge, albeit in an innocent way.
+            Whether it was drawing, playing games that challenged my ability to solve puzzles and problems like the Rubix Cube, card games, or old computer games that did just that.
+            My curiosity getting the best of me and asking my parents who were a Chemist and Radiologist what, why, and how they do their job.
+            The spirit of inquiry was there.</p>
+
+        <br>
+
+        <h2 class="bio-header title-spacing">Lost</h2>
+          <p>After settling down in San Francisco, I attended college with the goal of becoming a Physical Therapist.
+            I worked with scientists, professors, and professionals in the field to create plans depending on the individual’s condition.
+            I  provided feedback on different physical therapy design modalities.
+            As well as present qualitative and quantitative results on different research projects.
+            After some time, I realized that I did not have the time or resources to pursue this path.
+            It was at this point, I felt lost. </p>
+
+        <br>
+
+        <h2 class="bio-header title-spacing">Blessing in Disguise</h2>
+          <p>I began working in startup companies and I was exposed to a different way of helping others.
+            By creating meaningful products that assist people in their lives.
+            It was working in these settings that I was reminded that regardless of the field, I wanted my career to have an impact on others.</p>
+
+          <br>
+
+          <p>After some research I enrolled in Bloc’s Designer Apprenticeship program.
+            Product Design is the perfect marriage for my curiosity of solving complex problems and my awareness of others.
+            Through the curriculum and my mentors’ guidance, I refocused my skills towards the field of design.
+            I understand that my goal as a Designer is to create thoughtful and inclusive designs rooted in empathy for people and their everyday struggles.</p>
+
+        <br>
+
+        <h2 class="bio-header title-spacing">Enough About Me</h2>
+          <p>How can I help you? Connect with my anytime here.
+            Or if you’re local, let’s get a coffee and talk all things UX. </p>
+
+          <br>
+
+          <button class="circles bio-resume">
+            <a href="#"><h3>Resume</h3></a>
+          </button>
       </section>
 
       <br>
 
-      <!-- Lost -->
+      <!-- Photo Gallery -->
       <section>
-        <h2>Lost</h2>
-        <p>After settling down in San Francisco, I attended college with the goal of becoming a Physical Therapist. I worked with scientists, professors, and professionals in the field to create plans depending on the individual’s condition. I  provided feedback on different physical therapy design modalities. As well as present qualitative and quantitative results on different research projects. After some time, I realized that I did not have the time or resources to pursue this path. It was at this point, I felt lost. </p>
+        <h2 class="bio-header title-spacing">Photography</h2>
+          <p>I am incredibly inspired by traveling.
+            The culture, food, architecture and more importantly the people all contribute
+            to my creativity and love for learning about others. </p>
+
+        <br>
+
+        <div class="container">
+          <!-- Italy 1 -->
+          <!-- small size -->
+          <a href="#italy1">
+            <img src="./images/bio-img/italy1.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="italy1">
+            <img src="./images/bio-img/italy1.jpg">
+          </a>
+
+          <!-- Italy 2 -->
+          <a href="#italy2">
+            <img src="./images/bio-img/italy2.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="italy2">
+            <img src="./images/bio-img/italy2.jpg">
+          </a>
+
+          <!-- Italy 3 -->
+          <a href="#italy3">
+            <img src="./images/bio-img/italy3.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="italy3">
+            <img src="./images/bio-img/italy3.jpg">
+          </a>
+
+          <!-- Greece1 -->
+          <a href="#greece1">
+            <img src="./images/bio-img/greece1.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="greece1">
+            <img src="./images/bio-img/greece1.jpg">
+          </a>
+
+          <!-- Greece2 -->
+          <a href="#greece2">
+            <img src="./images/bio-img/greece2.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="greece2">
+            <img src="./images/bio-img/greece2.jpg">
+          </a>
+
+          <!-- Greece3 -->
+          <a href="#greece3">
+            <img src="./images/bio-img/greece3.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="greece3">
+            <img src="./images/bio-img/greece3.jpg">
+          </a>
+
+          <!-- Palawan -->
+          <a href="#palawan">
+            <img src="./images/bio-img/palawan.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="palawan">
+            <img src="./images/bio-img/palawan.jpg">
+          </a>
+
+          <!-- Bixby -->
+          <a href="#bixby">
+            <img src="./images/bio-img/bixby.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="bixby">
+            <img src="./images/bio-img/bixby.jpg">
+          </a>
+
+          <!-- Disney -->
+          <a href="#disney">
+            <img src="./images/bio-img/disney.jpg" class="thumbnail">
+          </a>
+          <!-- full size -->
+          <a href="#_" class="lightbox" id="disney">
+            <img src="./images/bio-img/disney.jpg">
+          </a>
       </section>
 
-      <br>
+      </div>
 
-      <!-- Blessing -->
-      <section>
-        <h2>Blessing in Disguise</h2>
-        <p>I began working in startup companies and I was exposed to a different way of helping others. By creating meaningful products that assist people in their lives. It was working in these settings that I was reminded that regardless of the field, I wanted my career to have an impact on others.</p>
-        <p>After some research I enrolled in Bloc’s Designer Apprenticeship program. Product Design is the perfect marriage for my curiosity of solving complex problems and my awareness of others. Through the curriculum and my mentors’ guidance, I refocused my skills towards the field of design. I understand that my goal as a Designer is to create thoughtful and inclusive designs rooted in empathy for people and their everyday struggles.</p>
-      </section>
-
-      <br>
-
-      <!-- Call to Action -->
-      <section>
-        <h2>Enough About Me</h2>
-        <p>How can I help you? Connect with my anytime here. Or if you’re local, let’s get a coffee and talk all things UX. </p>
-        <a href="#"><h3>Resume</h3></a>
-      </section>
-
-      <br>
-
-      <!-- Photography -->
-      <section>
-        <h2>Photography</h2>
-        <p>I am incredibly inspired by traveling. The culture, food, architecture and more importantly the people all contribute to my creativity and love for learning about others. </p>
-        <img src="./images/bio-img/italy1.jpg" alt="Photography 1">
-        <img src="./images/bio-img/italy2.jpg" alt="Photography 2">
-        <img src="./images/bio-img/italy3.jpg" alt="Photography 3">
-        <img src="./images/bio-img/greece1.jpg" alt="Photography 4">
-        <img src="./images/bio-img/greece2.jpg" alt="Photography 5">
-        <img src="./images/bio-img/greece3.jpg" alt="Photography 6">
-        <img src="./images/bio-img/palawan.jpg" alt="Photography 7">
-        <img src="./images/bio-img/bixby.jpg" alt="Photography 8">
-        <img src="./images/bio-img/disney.jpg" alt="Photography 9">
-      </section>
     </main>
 
     <footer>
-        <img src="./images/logo.png" alt="Logo">
+        <img src="./images/logo.svg" alt="Logo">
         <ul>
           <li><a href="https://www.linkedin.com/in/uxjohann/" target="_blank">
-            <img src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
+            <img class="sm-icons" src="./images/sm-icons/linkedin.svg" alt="linkedin Icon">
           </a></li>
           <li><a href="https://github.com/johannsebastian92" target="_blank">
-            <img src="./images/sm-icons/github.svg" alt="Github Icon">
+            <img class="sm-icons" src="./images/sm-icons/github.svg" alt="Github Icon">
           </a></li>
           <li><a href="https://www.instagram.com/j0hannsebastian/" target="_blank">
-            <img src="./images/sm-icons/ig.svg" alt="Instagram Icon">
+            <img class="sm-icons" src="./images/sm-icons/ig.svg" alt="Instagram Icon">
           </a></li>
           <li><a href="https://vsco.co/j0hannsebastian/images" target="_blank">
-            <img src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
+            <img class="sm-icons" src="./images/sm-icons/vsco.svg" alt="VSCO Icon">
         </a></li>
       </ul>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
