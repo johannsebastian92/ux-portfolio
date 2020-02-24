@@ -7,7 +7,8 @@
     <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran|Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -20,7 +21,6 @@
             <!--Nav Links-->
           <ul class="links">
               <li><a href="./bio.html">Bio</a></li>
-              <li><a href="#case-studies">Work</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,9 +32,9 @@
         </div>
 
         <div id="view-work">
-          <a class="link-to-work" href="#case-studies">
+          <a class="link-to-work" href="#work">
             <p>View My Work</p>
-            <div><img src="./images/Polygon1.svg"></div>
+            <div><img src="./images/Polygon1.svg" alt="triangle"></div>
           </a>
         </div>
       </div>
@@ -47,7 +47,7 @@
         <section id="nimbus-study-container">
             <h2 class="case-study-title"><strong>Nimbus</strong></h2>
             <p>Nimbus is a cloud storage application  designed for students and organizations to help create and amazing projects.</p>
-            <img class="home-responsive-dt" src="./images/nimbus-desktop.svg">
+            <img class="home-responsive-dt" src="./images/nimbus-desktop.svg" alt="Nimbus Deskktop">
             <!--<img src="./images/nimbus-mobile.svg"> -->
             <h3><strong>Role</strong></h3>
                 <ul>
@@ -55,9 +55,11 @@
                   <li>UX/UI Design</li>
                   <li>Branding</li>
                 </ul>
-              <button class="read-case-study-button">
-              <a href="./project.html">Read Case Study</a>
-              </button>
+
+                <ul class="read-case-study-button">
+                  <li><a class="rec-button" href="./project.html">Read Case Study</a></li>
+                </ul>
+
           </section>
 
     </main>
@@ -70,10 +72,11 @@
           I take this passion and apply it to my grasp of UX concepts to deliver functional and delightful experiences for the user.
           I am looking to join a team where I can contribute immediately. I will relocate for an awesome opprotunity!</p>
       </div>
-      <div id="call-to-action-buttons">
-        <button class="circles"><a href="./bio.html">Meet Johann</a></button>
-        <button class="circles"><a href="resumelink">Resume</a></button>
-      </div>
+
+      <ul id="call-to-action-buttons">
+         <li><a class="circles circles-type" href="./bio.html">Meet Johann</a></li>
+         <li><a class="circles circles-type" href="resumelink">Resume</a></li>
+       </ul>
     </div>
 
     <footer>

@@ -134,8 +134,8 @@ header .links {
   text-decoration: none;
 }
 
-li a:hover {
-  color: #E0ACD5;
+.links li a:hover {
+  color: #B2F7EF;
 }
 
 li a:active {
@@ -149,38 +149,70 @@ li a:active {
 }
 
 .link-to-work:hover {
-  color: #5FBFF9;
+  color: #B2F7EF;
 }
 
-/* Styling Rectangle Button */
-button {
-  background-color: #202124;
+.rec-button {
+  background-color: inherit;
   border: 1px solid white;
+  color: white;
+  display: block;
   font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
   font-size: 1.8rem;
   height: 50px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
   width: 290px;
 }
 
-button a {
-  text-decoration: none;
-  color: white;
-}
-
-button:hover {
-  color: #228CDB;
+.rec-button:hover{
   background-color: #228CDB;
 }
 
-
 /* Styling the Circle buttons */
+#call-to-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  position: absolute;
+  text-align: left;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
 .circles {
-  background-color: inherit;
+  align-items: center;
+  border: 1px solid white;
+  height: 110px;
+  width: 110px;
+  display: flex;
   border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+}
+
+.circles-type {
+  color: white;
   font-family: 'Yeseva One', cursive;
   font-size: 1.8rem;
-  height: 110px;
-  width:110px
+  text-decoration: none;
+}
+
+.circles:hover {
+  background-color: #228CDB;
+}
+
+#call-to-action {
+  left: 50%;
+  position: absolute;
+  text-align: left;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 /* Case Studies Title */
@@ -200,14 +232,14 @@ padding-bottom: 4rem;
 
 .home-responsive-dt {
   height: auto;
-  margin: 0 2rem;
+  margin: 0 3rem;
   max-width: 100%;
   padding: 4rem 0;
   width: 80%;
 }
 
 .read-case-study-button {
-  margin: 3rem 2rem 0 2rem;
+  margin: 3rem 2rem 0 1rem;
 }
 
 /*Looking for*/
@@ -221,28 +253,8 @@ position: relative;
 width: 100%;
 }
 
-#call-to-action {
-  left: 50%;
-  position: absolute;
-  text-align: left;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-}
-
 .looking-for-title {
   padding-bottom: 1.5rem;
-}
-
-#call-to-action-buttons {
-  display: flex;
-  justify-content: space-between;
-  left: 50%;
-  position: absolute;
-  text-align: left;
-  top: 75%;
-  transform: translate(-50%, -50%);
-  width: 80%;
 }
 
 /* Footer */
@@ -298,7 +310,7 @@ nav .links {
 }
 
 .open-link {
-  margin: 3rem 2rem 5rem 2rem;
+  margin: 3rem 0 5rem 0;
 }
 
 .overview-title {
@@ -330,10 +342,9 @@ li {
 
 .percent-column {
   float: none;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 1rem;
 }
 
 .percent {
@@ -345,9 +356,8 @@ li {
   text-align: center;
 }
 
-
-.competitive-img {
-  align-items: center;
+#competitive-img {
+  display: flex; 
 }
 
 #drive-img{
@@ -412,12 +422,14 @@ blockquote {
   height: auto;
 }
 
-
 #mobile-proto-img {
-  height: auto;
-  margin: 3.5rem 9rem 0 9rem;
+  display: block;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.5rem;
   max-width: 15rem;
-  width: 100%;
+  width: 40%;
 }
 
 #back-to-top {
@@ -453,15 +465,8 @@ main {
   padding: 5rem 2rem;
 }
 
-.resume-centering {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5rem;
-}
-
 .call-to-action {
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .text-input {
@@ -513,13 +518,11 @@ textarea {
 }
 
 .bio-resume {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Photo Gallery */
-
 .thumbnail {
   max-width: 40%;
 }
@@ -540,7 +543,7 @@ textarea {
 	background: rgba(0,0,0,0.8);
 }
 .lightbox img {
-	max-width: 90%;
+	max-width: 95%;
 	max-height: 80%;
 	margin-top: 2%;
 }
