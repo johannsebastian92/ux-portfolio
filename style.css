@@ -89,6 +89,10 @@ header #view-work {
   transform: translate(-50%, -50%);
 }
 
+#last-name {
+  display: none;
+}
+
 span.intro {
   opacity: 0.87;
 }
@@ -161,11 +165,13 @@ li a:active {
   font-weight: bold;
   font-size: 1.8rem;
   height: 50px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
-  width: 290px;
+  width: 80%;
 }
 
 .rec-button:hover{
@@ -176,19 +182,17 @@ li a:active {
 #call-to-action-buttons {
   display: flex;
   justify-content: space-between;
-  left: 50%;
-  position: absolute;
-  text-align: left;
-  top: 75%;
-  transform: translate(-50%, -50%);
-  width: 80%;
+  width: 75%;
+  margin-top: 45rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .circles {
   align-items: center;
   border: 1px solid white;
-  height: 110px;
-  width: 110px;
+  height: 9rem;
+  width: 9rem;
   display: flex;
   border-radius: 50%;
   justify-content: center;
@@ -198,12 +202,8 @@ li a:active {
 .circles-type {
   color: white;
   font-family: 'Yeseva One', cursive;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-decoration: none;
-}
-
-.circles:hover {
-  background-color: #228CDB;
 }
 
 #call-to-action {
@@ -230,13 +230,20 @@ margin: 0 2rem;
 padding-bottom: 4rem;
 }
 
-.home-responsive-dt {
+#home-responsive-dt {
+  display: block;
   height: auto;
-  margin: 0 3rem;
-  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 53rem;
   padding: 4rem 0;
-  width: 80%;
+  width: 100%;
 }
+
+#home-responsive-mobile {
+  display: none;
+}
+
 
 .read-case-study-button {
   margin: 3rem 2rem 0 1rem;
@@ -248,13 +255,13 @@ background-image: url("./images/looking-for.png");
 background-position: center;
 background-size: cover;
 float:left;
-height: 80vh;
+height: 100vh;
 position: relative;
 width: 100%;
 }
 
 .looking-for-title {
-  padding-bottom: 1.5rem;
+  padding: 2rem 0;
 }
 
 /* Footer */
@@ -522,6 +529,15 @@ textarea {
   margin-right: auto;
 }
 
+#bio-cta {
+  color: #228CDB;
+  text-decoration: none;
+}
+
+#bio-cta:hover {
+  opacity: .5;
+}
+
 /* Photo Gallery */
 .thumbnail {
   max-width: 40%;
@@ -553,16 +569,223 @@ textarea {
 }
 
 img.thumbnail {
-  height: 25rem;
   max-width: 100%;
-  width: 30rem;
-  margin-bottom: 1rem;
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
-@media (max-width:765px) {
+/*@media (max-width:765px) {
 	.thumbnail {
 		max-width: 95%;
 	}
 	.lightbox img {
 		margin-top: 50%;
-	}
+	}*/
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width:767px) {
+/* Home Page */
+  .nav-bar {
+  padding: 2rem 3rem 0 3rem;
+ }
+
+  #hero-text p {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+  #last-name {
+    display: inline;
+  }
+
+  #looking-for {
+    height: 65vh;
+  }
+
+  #call-to-action-buttons {
+    width: 55%;
+    margin-top: 40rem;
+  }
+
+  footer {
+    padding: 1rem 3rem;
+  }
+
+  footer ul li {
+    padding: 0 1rem;
+  }
+}
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Home Page */
+  .nav-bar {
+    padding: 2rem 5rem 0 5rem;
+  }
+
+  #hero-text p{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .rec-button {
+    width: 60%;
+  }
+
+  #looking-for {
+    height: 60vh;
+  }
+
+  #call-to-action-buttons {
+    width: 55%;
+    margin-top: 40rem;
+  }
+
+  footer {
+    padding: 1rem 5rem;
+  }
+
+  footer ul li {
+    padding: 0 1.5rem;
+  }
+
+  /* Biography */
+  #bio-container {
+    padding: 6rem 5rem;
+  }
+
+  img.thumbnail {
+    display: inline;
+    height: auto;
+    width: 49%;
+    padding: 1rem;
+  }
+
+  /* Contact Page */
+  #contact-container {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+  .nav-bar {
+  padding: 3rem 9rem 0 9rem;
+  }
+
+  #hero-text p {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  #nimbus-study-container {
+    margin: 0 9rem;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .flex-container {
+    margin-top: 5rem;
+  }
+
+  #nimbus-study-container p {
+    width: 33rem
+  }
+
+  #home-responsive-dt {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #home-responsive-mobile {
+    display: initial;
+    height: auto;
+    max-width: 21rem;
+    width: 100%;
+  }
+
+  .rec-button {
+    width: 21rem;
+  }
+
+  .looking-for-title {
+    padding-bottom: 3rem;
+  }
+
+  #call-to-action p {
+    width: 75%;
+    padding-left: 10%;
+  }
+
+  footer {
+    padding: 1rem 7rem;
+  }
+
+  footer ul li {
+    padding: 0 2rem;
+  }
+
+  #looking-for {
+    height: 60vh;
+  }
+
+  .looking-for-title {
+    padding-top: 10rem;
+  }
+
+  #call-to-action-buttons {
+    margin-top: 10rem;
+    margin-left: 80%;
+    flex-flow: column;
+  }
+
+  #call-to-action-buttons li {
+    padding: 2rem 0;
+  }
+
+/* Biography Page */
+  main {
+    padding: 1rem 9rem;
+  }
+
+  img.thumbnail {
+    display: inline;
+    height: auto;
+    width: 30%;
+    padding: 0;
+    margin: 1rem;
+    }
+
+  #bio-container p {
+   width: 60%;
+  }
+
+  .about-me {
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    }
+
+  #bio-container .responsive-hero {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    position: absolute;
+    left: 67%;
+    }
+
+  #bio-container .bio-resume {
+    position: absolute;
+    top: 145%;
+    left: 75%;
+    margin: auto;
+  }
+}

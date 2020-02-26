@@ -184,31 +184,57 @@
           <!-- Personas -->
             <h2 class="artifact-spacing"><strong>User Personas</strong></h2>
             <!-- Julia Persona -->
-            <div>
-              <div class="persona-overview">
-                <h3 class="artifact-title title-spacing"><strong>Julia</strong></h3>
-                <p>22 years old graduate student at San Diego State University</p>
+            <div id="julia-persona">
+                <div class="persona-overview">
+                  <h3 class="artifact-title title-spacing"><strong>Julia</strong></h3>
+                  <p>22 years old graduate student at San Diego State University</p>
 
-              <img src="./images/nimbus-images/julia.svg" alt="Julia Persona">
-              <blockquote>“Sharing my thought process is a part of how I work”</blockquote>
+                <img src="./images/nimbus-images/julia.svg" alt="Julia Persona">
+                <blockquote>“Sharing my thought process is a part of how I work”</blockquote>
+              </div>
+                <!-- Goals and Frustrations -->
+                <br>
+                <div class="motivation">
+                  <h3 class="persona-spacing"><strong>Goals</strong></h3>
+                  <ul>
+                    <li>Collaborate with her peers in a safe and secure space</li>
+                    <li>Share her projects to her social media profiles</li>
+                    <li>View what work has been done in projects and by whom</li>
+                  </ul>
+                  <br>
+                  <h3 class="persona-spacing"><strong>Frustrations</strong></h3>
+                  <ul>
+                    <li>Not being able to organize her projects appropriately</li>
+                    <li>Cloud storage apps either lack the tools needed for her work or are too expensive for a college student</li>
+                  </ul>
+                </div>
+          </div>
+
+          <!-- Eduardo Persona -->
+          <div id="eduardo-persona">
+              <div class="persona-overview">
+                <h3 class="artifact-title title-spacing"><strong>Eduardo</strong></h3>
+                <p>25 year old Project Manager at a financial technology company</p>
+
+              <img src="./images/nimbus-images/eduardo.svg" alt="Julia Persona">
+              <blockquote>“I care deeply about the journey of completing a project and the impact I have”</blockquote>
             </div>
               <!-- Goals and Frustrations -->
               <br>
               <div class="motivation">
                 <h3 class="persona-spacing"><strong>Goals</strong></h3>
                 <ul>
-                  <li>Collaborate with her peers in a safe and secure space</li>
-                  <li>Share her projects to her social media profiles</li>
-                  <li>View what work has been done in projects and by whom</li>
+                  <li>To use a tool that he and his team can use that can create different files for different platforms</li>
+                  <li>Be able to have access to his files from multiple devices without limitations</li>
+                  <li>Organizing files by folder name</li>
                 </ul>
                 <br>
                 <h3 class="persona-spacing"><strong>Frustrations</strong></h3>
                 <ul>
-                  <li>Not being able to organize her projects appropriately</li>
-                  <li>Cloud storage apps either lack the tools needed for her work or are too expensive for a college student</li>
+                  <li>Due to working in a tech company with sensitive information, he lacks confidence that these files are properly protected by the tools they are currently using.</li>
                 </ul>
               </div>
-          </div>
+        </div>
         </section>
 
         <br>
@@ -223,11 +249,26 @@
             <ul class="read-case-study-button open-link">
               <li><a class="rec-button" href="https://docs.google.com/spreadsheets/d/168-c0uesODb4xkwZblFkGnacxsfdNta7mySkMvc99X4/edit?usp=sharing" target="_blank">View User Stories</a></li>
             </ul>
+            <!-- Onboarding User Flow -->
+            <img class="user-flow-img hide-flow" src="./images/nimbus-images/onboarding.svg" alt="Onboarding Flow">
             <h3>As a user, I want to create content</h3>
             <img class="user-flow-img" src="./images/nimbus-images/content-creation.svg" alt="Content Creation Flow">
             <br>
             <h3>As a user, I want to share my project</h3>
             <img class="user-flow-img" src="./images/nimbus-images/share.svg" alt="Share Flow">
+            <!-- Organize User Flow -->
+            <img class="user-flow-img hide-flow" src="./images/nimbus-images/organize-flow.svg" alt="Organize Flow">
+            <!-- Upload User Flow -->
+            <img class="user-flow-img hide-flow" src="./images/nimbus-images/upload-flow.svg" alt="Organize Flow">
+          </div>
+
+          <div id="wireframe-sketches">
+            <h2><strong>Wireframe Sketches</strong></h2>
+              <p>With a clear focus and solid foundation, I began about sketching how the pages can possibly look like. This allowed for rapid </p>
+            <h3><strong>Mobile Wireframes</strong></h2>
+              <img class="wireframe-sketch" src="./images/nimbus-images/mobile-sketches.png" alt="Mobile Wireframes">
+            <h3><strong>Desktop Wireframes</strong></h2>
+              <img class="wireframe-sketch" src="./images/nimbus-images/desktop-sketches.png" alt="Mobile Wireframes">
           </div>
           <!-- Low Fidelity Wireframes -->
           <div>
@@ -246,18 +287,23 @@
           <p>Once the low fidelity wireframes were completed, I conducted a usability test on 3 individuals. The tasks that were tested were signing up for an account, adding content, and organizing content. </p>
           <br>
 
-          <!-- Before Testing -->
-          <div>
-              <h3 class="artifact-title"><strong>Before</strong></h3>
-                <img class="testing-img" src="./images/nimbus-images/before-mobile.svg" alt="Before Testing">
+
+          <div id="before-testing">
+            <h3 class="artifact-title"><strong>Before Testing</strong></h3>
+            <picture>
+              <source  media="(min-width: 768px)" srcset="./images/nimbus-images/before-desktop.svg">
+              <source  media="(min-width: 375px)" srcset="./images/nimbus-images/before-mobile.svg">
+              <img class="testing-img" src="./images/nimbus-images/before-mobile.svg" alt="Before Testing">
+            </picture>
           </div>
 
-          <br>
-
-          <!-- After Testing -->
-          <div>
-              <h3 class="artifact-title"><strong>After</strong></h3>
-                <img class="testing-img" src="./images/nimbus-images/after-mobile.svg" alt="After Testing">
+          <div id="after-testing">
+            <h3 class="artifact-title"><strong>After Testing</strong></h3>
+            <picture>
+              <source  media="(min-width: 768px)" srcset="./images/nimbus-images/after-desktop.svg">
+              <source  media="(min-width: 375px)" srcset="./images/nimbus-images/after-mobile.svg">
+              <img class="testing-img" src="./images/nimbus-images/after-mobile.svg" alt="After Testing">
+            </picture>
           </div>
 
           <h3 class="artifact-title title-spacing">Testing Results</h3>
@@ -291,6 +337,7 @@
           <p>“Head in the clouds” is the phrase that best describes the Nimbus brand.
             We want the user to feel inspired to create great work throughout the day and night.
             That is why we use vibrant and diverse colors with simple typography. </p>
+          <img id="moodboard" src="./images/nimbus-images/moodboard.png">
 
           <!-- Logo -->
           <div id="nimbus-logo">
@@ -302,6 +349,11 @@
             <img class="logo-img title-spacing" src="./images/nimbus-images/black-logo.svg" alt="Final White Logo">
           </div>
 
+          <div id="nimbus-logo-sketches">
+            <h2><strong>Sketches</strong></h2>
+            <img src="./images/nimbus-images/logo-sketches-1.png">
+            <img src="./images/nimbus-images/logo-sketches-2.png">
+          </div>
           <br>
           <!-- Color Palette -->
           <div>
@@ -328,10 +380,20 @@
           <p>High fidelity mockups were constructed the research, information architecture, and visual design. The key concepts of Nimbus were composed to create an efficient user experience. </p>
 
           <!-- Mobile Prototype -->
-          <img id="mobile-proto-img" src="./images/nimbus-images/mobile-proto.svg" alt="Mobile Prototype">
-          <ul class="read-case-study-button open-link">
-            <li><a class="rec-button" href="https://invis.io/UVUCSD27XHR" target="_blank">View Mobile Prototype</a></li>
-          </ul>
+          <div id="mobile-prototype">
+            <img id="mobile-proto-img" src="./images/nimbus-images/mobile-proto.svg" alt="Mobile Prototype">
+            <ul class="read-case-study-button open-link">
+              <li><a class="rec-button" href="https://invis.io/UVUCSD27XHR" target="_blank">Mobile Prototype</a></li>
+            </ul>
+          </div>
+
+          <!-- Desktop Prototype -->
+          <div id="desktop-proto">
+            <img class="desktop-proto-img" src="./images/nimbus-desktop.svg" alt="Desktop Prototype">
+            <ul class="read-case-study-button open-link">
+              <li><a class="rec-button" href="https://invis.io/YTUCSD7ZJBQ" target="_blank">Desktop Prototype</a></li>
+            </ul>
+          </div>
         </section>
 
         <br>
