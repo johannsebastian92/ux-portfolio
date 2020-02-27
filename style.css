@@ -142,8 +142,8 @@ header .links {
   color: #B2F7EF;
 }
 
-li a:active {
-  color: #E0ACD5;
+nav .links li a:active {
+  color: #B2F7EF;
 }
 
 /* Styling <a> going to Case Studies*/
@@ -171,7 +171,7 @@ li a:active {
   padding: 1rem;
   text-align: center;
   text-decoration: none;
-  width: 80%;
+  /*width: 80%;*/
 }
 
 .rec-button:hover{
@@ -179,13 +179,16 @@ li a:active {
 }
 
 /* Styling the Circle buttons */
-#call-to-action-buttons {
+#cto-buttons-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 75%;
-  margin-top: 45rem;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.call-to-action-buttons {
+  padding: 0px 10%;
 }
 
 .circles {
@@ -206,6 +209,10 @@ li a:active {
   text-decoration: none;
 }
 
+#cto-buttons-wrapper .call-to-action-buttons a:hover {
+  opacity: .5;
+}
+
 #call-to-action {
   left: 50%;
   position: absolute;
@@ -213,6 +220,10 @@ li a:active {
   top: 30%;
   transform: translate(-50%, -50%);
   width: 80%;
+}
+
+#bio-container .bio-resume:hover {
+  opacity: .5;
 }
 
 /* Case Studies Title */
@@ -237,7 +248,7 @@ padding-bottom: 4rem;
   margin-right: auto;
   max-width: 53rem;
   padding: 4rem 0;
-  width: 100%;
+  width: 80%;
 }
 
 #home-responsive-mobile {
@@ -255,7 +266,7 @@ background-image: url("./images/looking-for.png");
 background-position: center;
 background-size: cover;
 float:left;
-height: 100vh;
+height: 75vh;
 position: relative;
 width: 100%;
 }
@@ -279,7 +290,7 @@ footer ul {
 }
 
 footer ul li {
-  padding: 0 1.2rem;
+  padding: 0 .5rem;
   align-items: center;
 }
 
@@ -472,8 +483,16 @@ main {
   padding: 5rem 2rem;
 }
 
+#contact-looking-for h1 {
+  line-height: 1;
+}
+
 .call-to-action {
   padding-bottom: 3rem;
+}
+
+.call-to-action a:hover {
+  opacity: .5;
 }
 
 .text-input {
@@ -586,206 +605,289 @@ img.thumbnail {
 		margin-top: 50%;
 	}*/
 
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width:767px) {
-/* Home Page */
+
+@media (max-width: 480px) {
   .nav-bar {
-  padding: 2rem 3rem 0 3rem;
- }
-
-  #hero-text p {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-  }
-
-  #last-name {
-    display: inline;
-  }
-
-  #looking-for {
-    height: 65vh;
-  }
-
-  #call-to-action-buttons {
-    width: 55%;
-    margin-top: 40rem;
-  }
-
-  footer {
-    padding: 1rem 3rem;
-  }
-
-  footer ul li {
-    padding: 0 1rem;
-  }
-}
-
-
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Home Page */
-  .nav-bar {
-    padding: 2rem 5rem 0 5rem;
-  }
-
-  #hero-text p{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-  .rec-button {
-    width: 60%;
-  }
-
-  #looking-for {
-    height: 60vh;
-  }
-
-  #call-to-action-buttons {
-    width: 55%;
-    margin-top: 40rem;
-  }
-
-  footer {
-    padding: 1rem 5rem;
-  }
-
-  footer ul li {
-    padding: 0 1.5rem;
-  }
-
-  /* Biography */
-  #bio-container {
-    padding: 6rem 5rem;
-  }
-
-  img.thumbnail {
-    display: inline;
-    height: auto;
-    width: 49%;
-    padding: 1rem;
-  }
-
-  /* Contact Page */
-  #contact-container {
-    width: 75%;
-    margin: auto;
-  }
-}
-
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) {
-  .nav-bar {
-  padding: 3rem 9rem 0 9rem;
-  }
-
-  #hero-text p {
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-
-  #nimbus-study-container {
-    margin: 0 9rem;
-  }
-
-  .flex-container {
+    align-items: center;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2rem;
   }
 
-  .flex-container {
-    margin-top: 5rem;
-  }
-
-  #nimbus-study-container p {
-    width: 33rem
-  }
-
-  #home-responsive-dt {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  #home-responsive-mobile {
-    display: initial;
-    height: auto;
-    max-width: 21rem;
-    width: 100%;
+  .call-to-action-buttons {
+    padding: 0px 10%;
   }
 
   .rec-button {
-    width: 21rem;
-  }
-
-  .looking-for-title {
-    padding-bottom: 3rem;
-  }
-
-  #call-to-action p {
-    width: 75%;
-    padding-left: 10%;
-  }
-
-  footer {
-    padding: 1rem 7rem;
-  }
-
-  footer ul li {
-    padding: 0 2rem;
-  }
-
-  #looking-for {
-    height: 60vh;
-  }
-
-  .looking-for-title {
-    padding-top: 10rem;
-  }
-
-  #call-to-action-buttons {
-    margin-top: 10rem;
-    margin-left: 80%;
-    flex-flow: column;
-  }
-
-  #call-to-action-buttons li {
-    padding: 2rem 0;
-  }
-
-/* Biography Page */
-  main {
-    padding: 1rem 9rem;
-  }
-
-  img.thumbnail {
-    display: inline;
-    height: auto;
-    width: 30%;
-    padding: 0;
-    margin: 1rem;
-    }
-
-  #bio-container p {
-   width: 60%;
-  }
-
-  .about-me {
-    margin-bottom: 5rem;
-    margin-top: 10rem;
-    }
-
-  #bio-container .responsive-hero {
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    position: absolute;
-    left: 67%;
-    }
-
-  #bio-container .bio-resume {
-    position: absolute;
-    top: 145%;
-    left: 75%;
-    margin: auto;
+    width: 0%;
   }
 }
+
+  /* Media Query for low resolution  Tablets, Ipads */
+  @media (min-width: 481px) {
+  /* Home Page */
+    .nav-bar {
+    padding: 2rem 3rem 0 3rem;
+   }
+
+   .rec-button {
+     width: 50%;
+   }
+
+    #hero-text p {
+      padding-left: 12.5%;
+      padding-right: 12.5%;
+    }
+
+    #last-name {
+      display: inline;
+    }
+
+    #looking-for {
+      height: 65vh;
+    }
+
+    .call-to-action-buttons {
+      padding: 0 20%;
+    }
+
+    footer {
+      padding: 1rem 3rem;
+    }
+
+    footer ul li {
+      padding: 0 1rem;
+    }
+
+    /* Contact Page */
+    #contact-container {
+    padding: 5rem 3rem;
+      }
+  }
+
+
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) {
+    /* Home Page */
+    .nav-bar {
+      padding: 3rem 5rem 0 5rem;
+    }
+
+    #hero-text p{
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    .rec-button {
+      width: 30%;
+    }
+
+    #looking-for {
+      height: 60vh;
+    }
+
+    #cto-buttons-wrapper {
+      left: 40%;
+    }
+
+    .call-to-action-buttons {
+      padding: 0 30%;
+    }
+
+    footer {
+      padding: 2rem 5rem 1rem 5rem;
+    }
+
+    footer ul li {
+      padding: 0 1.5rem;
+    }
+
+    #nimbus-study-container p {
+      width: 33rem
+    }
+
+    #home-responsive-dt {
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
+
+    /* Biography */
+    #bio-container {
+      padding: 6rem 7rem;
+    }
+
+    section .container {
+      margin: 0 0rem;
+    }
+
+    img.thumbnail {
+      display: inline;
+      height: auto;
+      width: 49%;
+      padding: 1rem;
+    }
+
+    /* Contact Page */
+    #contact-container {
+      width: 75%;
+      margin: auto;
+    }
+  }
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) {
+    .nav-bar {
+    padding: 4rem 9rem 0 9rem;
+    }
+
+    #hero-text p {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
+    #nimbus-study-container {
+      margin: 0 9rem;
+    }
+
+    #cto-buttons-wrapper {
+      display:inherit;
+      top: 45%;
+      left: 80%;
+    }
+
+    .call-to-action-buttons {
+      margin: 5rem 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    .flex-container {
+      margin-top: 5rem;
+    }
+
+    #nimbus-study-container p {
+      width: 33rem
+    }
+
+    #home-responsive-dt {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    #home-responsive-mobile {
+      display: initial;
+      height: auto;
+      max-width: 21rem;
+      width: 100%;
+    }
+
+    .rec-button {
+      width: 21rem;
+    }
+
+    .looking-for-title {
+      padding-bottom: 3rem;
+    }
+
+    #call-to-action p {
+      width: 75%;
+      padding-left: 10%;
+    }
+
+    footer {
+      padding: 2rem 7rem 2rem 7rem;
+    }
+
+    footer ul li {
+      padding: 0 2rem;
+    }
+
+    #looking-for {
+      height: 60vh;
+    }
+
+    .looking-for-title {
+      padding-top: 10rem;
+    }
+
+    .call-to-action-buttons li {
+      padding: 2rem 0;
+    }
+
+  /* Biography Page */
+    main {
+      padding: 1rem 9rem;
+    }
+
+    img.thumbnail {
+      display: inline;
+      height: auto;
+      width: 30%;
+      padding: 0;
+      margin: 1rem;
+      }
+
+    #bio-container p {
+     width: 60%;
+    }
+
+    .about-me {
+      margin-bottom: 5rem;
+      margin-top: 10rem;
+      }
+
+    #bio-container .responsive-hero {
+      margin-bottom: 5rem;
+      margin-top: 5rem;
+      position: absolute;
+      left: 67%;
+      }
+
+    #bio-container .bio-resume {
+      bottom: -60%;
+      left: 75%;
+      position: absolute;
+    }
+
+    /* Contact Page */
+    #contact-container .responsive-hero {
+      position: absolute;
+      right: 10%;
+    }
+
+    .call-to-action a {
+      position: absolute;
+      left: 75%;
+      bottom: 5%;
+    }
+
+    #contact-container {
+      margin: 0px;
+      padding-left: 9rem;
+    }
+
+    section p {
+      width: 60%;
+    }
+
+    #contact-form-wrapper {
+      margin: 10rem 0;
+    }
+
+    .text-input {
+      width: 60%;
+    }
+
+    textarea {
+      width: 60%;
+    }
+
+    .submit {
+      width: 60%;
+    }
+  }
