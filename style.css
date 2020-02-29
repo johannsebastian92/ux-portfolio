@@ -58,7 +58,7 @@ header {
 }
 
 header #hero-img {
-  background-image: url("./images/header-img.png");
+  background-image: url("./images/header-img.jpg");
   background-position: center;
   background-size: cover;
   float:left;
@@ -136,6 +136,7 @@ header .links {
   float: left;
   padding: .8rem 1.6rem;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .links li a:hover {
@@ -175,7 +176,8 @@ nav .links li a:active {
 }
 
 .rec-button:hover{
-  background-color: #228CDB;
+  background-color: #B2F7EF;
+  color: black;
 }
 
 /* Styling the Circle buttons */
@@ -226,7 +228,7 @@ nav .links li a:active {
   opacity: .5;
 }
 
-/* Case Studies Title */
+/* ----- Case Studies ------ */
 .work {
   text-align: center;
   padding: 4rem 2rem;
@@ -260,9 +262,9 @@ padding-bottom: 4rem;
   margin: 3rem 2rem 0 1rem;
 }
 
-/*Looking for*/
+/* ----- Looking for ----- */
 #looking-for{
-background-image: url("./images/looking-for.png");
+background-image: url("./images/looking-for.jpg");
 background-position: center;
 background-size: cover;
 float:left;
@@ -275,7 +277,7 @@ width: 100%;
   padding: 2rem 0;
 }
 
-/* Footer */
+/* ----- Footer ----- */
 footer {
   align-items: center;
   border-top: 1px solid white;
@@ -312,6 +314,9 @@ nav .links {
   flex-direction: row;
 }
 
+.desktop-prototype {
+  display: none;
+}
 
 /* Styling Project Introduction */
 #nimbus-final {
@@ -323,8 +328,16 @@ nav .links {
 }
 
 #nimbus-title {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
   text-align: center;
+}
+
+#extra-title {
+  display:none;
+}
+
+#desktop-survey {
+  display: none;
 }
 
 .open-link {
@@ -332,7 +345,7 @@ nav .links {
 }
 
 .overview-title {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .title-spacing {
@@ -353,16 +366,13 @@ li {
 
 .stat-spacing {
   display: flex;
-  /*flex-direction: row;*/
-  align-items: center;
-  align-items: baseline;
+  justify-content: center;
 }
 
 .percent-column {
-  float: none;
-  width: 100%;
-  margin: auto;
+  margin: 0 2%;
   padding: 4rem 1rem;
+  width: 15rem;
 }
 
 .percent {
@@ -371,11 +381,14 @@ li {
 }
 
 .percent-column p {
+  margin:auto;
   text-align: center;
+  width: 95%;
 }
 
 #competitive-img {
-  display: flex; 
+  display: flex;
+  justify-content: center;
 }
 
 #drive-img{
@@ -383,6 +396,7 @@ li {
   width: 16rem;
 }
 
+/* ----- Nimbus User Personas -----*/
 .persona-overview {
   text-align: center;
 }
@@ -402,15 +416,66 @@ blockquote {
   list-style: circle;
 }
 
+.persona-overview p {
+  margin-bottom: 3rem;
+}
+
 .persona-spacing {
   margin-bottom: 1rem;
 }
 
+#eduardo-persona {
+  display: none;
+}
 
+/* ----- Nimbus User Flows -----*/
 .user-flow-img {
   height: auto;
   max-width: 100%;
   padding: 2.5rem 0 3rem 0;
+}
+
+#user-flow-wrapper {
+  display: none;
+}
+
+/*----- Nimbus Wireframes ----- */
+#wireframe-sketches {
+  display: none;
+}
+
+/*----- Nimbus IA ----- */
+
+section h1 {
+  line-height: 1;
+}
+
+/*----- Stories & Flows ----- */
+#user-flows {
+  display:none;
+}
+
+#stories-flows-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.ia-buttons {
+  margin: 0px 3rem;
+}
+
+.ia-buttons:hover {
+  opacity: .5;
+}
+
+#low-fi-video {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 4rem;
 }
 
 
@@ -420,6 +485,7 @@ blockquote {
   width: 100%;
 }
 
+/* ----- Nimbus Visual ----- */
 
 #nimbus-logo{
   margin: 5rem 0 0 0;
@@ -428,11 +494,27 @@ blockquote {
 .logo-img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.visual-description {
+  display: none;
+}
+
+#nimbus-logo-sketches {
+  display: none;
 }
 
 #nimbus-colors {
-  width: 100%;
+  width: 80%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
 }
 
 #type-img {
@@ -450,6 +532,14 @@ blockquote {
   width: 40%;
 }
 
+#mobile-proto-img:hover {
+  opacity: 0.5;
+}
+
+#desktop-proto-img {
+  display: none;
+}
+
 #back-to-top {
   color: white;
   margin: 4rem 0;
@@ -462,10 +552,10 @@ blockquote {
 }
 
 .nimbus-phase-container {
-  margin: 6rem 2rem 0 2rem;
+  margin: 3rem 2rem 0 2rem;
 }
 
-/* Contact Page Styling */
+/* ----- Contact Page Styling ------ */
 
 .responsive-hero {
   border-radius: 80%;
@@ -521,7 +611,6 @@ textarea {
   padding-bottom: 8rem;
   padding-left: 1rem;
   overflow: auto;
-  overflow: break-word
 }
 
 .submit {
@@ -537,7 +626,7 @@ textarea {
   width: 100%
 }
 
-/* Biography Styling */
+/* ----- Biography Styling ----- */
 .bio-header {
   font-size: 2.5rem;
   font-family: 'Yeseva One', cursive;
@@ -562,7 +651,7 @@ textarea {
   max-width: 40%;
 }
 .website {
- font-style: bold;
+ font-weight: bold;
  font-size: 0.8em;
  color: #ff3d3d;
 }
@@ -595,7 +684,6 @@ img.thumbnail {
   margin-left: auto;
   margin-right: auto;
 }
-}
 
 /*@media (max-width:765px) {
 	.thumbnail {
@@ -625,7 +713,8 @@ img.thumbnail {
 
   /* Media Query for low resolution  Tablets, Ipads */
   @media (min-width: 481px) {
-  /* Home Page */
+
+  /* -----Home Page ---- */
     .nav-bar {
     padding: 2rem 3rem 0 3rem;
    }
@@ -659,16 +748,82 @@ img.thumbnail {
       padding: 0 1rem;
     }
 
-    /* Contact Page */
+    /* ------ Contact Page ----- */
     #contact-container {
-    padding: 5rem 3rem;
+      padding: 5rem 3rem;
       }
+
+    /* ----- Nimbus Case Study ----- */
+    #project-header-container {
+      margin: 0 3rem;
+    }
+
+    main {
+      padding: 5rem 3rem;
+    }
+
+    .percent-column {
+      width: 25rem;
+    }
+
+    .percent-column p {
+      width: 70%;
+      margin: auto;
+    }
+
+    .stat-spacing {
+      display: flex;
+      justify-content: center;
+    }
+
+    #competitive-img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5rem;
+    }
+
+    .comp-img {
+      padding: 0 5rem;
+    }
+
+    blockquote {
+      float: none;
+      margin-bottom: 3rem;
+      width: 100%;
+    }
+
+    #stories-flows-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .ia-buttons {
+    margin: 0px 10%;
+    }
+
+    #low-fi-video {
+      width: 80%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 4rem;
+    }
+
+    #logos {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+    }
+
+
   }
 
 
   /* Media Query for Tablets Ipads portrait mode */
   @media (min-width: 768px) {
-    /* Home Page */
+
+  /*----- Home Page -----*/
     .nav-bar {
       padding: 3rem 5rem 0 5rem;
     }
@@ -712,9 +867,9 @@ img.thumbnail {
       width: 60%;
     }
 
-    /* Biography */
+    /*----- Biography Page -----*/
     #bio-container {
-      padding: 6rem 7rem;
+      padding: 6rem 10rem;
     }
 
     section .container {
@@ -728,17 +883,83 @@ img.thumbnail {
       padding: 1rem;
     }
 
-    /* Contact Page */
+    /*----- Contact Page -----*/
     #contact-container {
       width: 75%;
       margin: auto;
     }
+
+    /* ----- Nimbus Project ----- */
+    #project-header-container {
+      padding: 0 5rem;
+    }
+
+    main {
+      padding: 5rem 5rem;
+    }
+
+    main p {
+      width: 90%;
+    }
+
+    #extra-title {
+      display: inline;
+    }
+
+    #nimbus-quick {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 10rem;
+      padding-right: 3rem;
+    }
+
+    .overview {
+      text-align: center;
+    }
+
+    .percent-column {
+      margin: 1rem 2%;
+    }
+
+    .stat-spacing {
+      margin: 0 5%;
+    }
+
+    .persona-overview p {
+      margin-bottom: 3rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .motivation {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .logo-img {
+      width: 55%;
+    }
+
+    #type-img {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
 
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) {
     .nav-bar {
-    padding: 4rem 9rem 0 9rem;
+    padding: 4rem 10rem 0 10rem;
+    }
+
+    .links li a {
+      padding: .8rem 3rem;
     }
 
     #hero-text p {
@@ -752,7 +973,7 @@ img.thumbnail {
 
     #cto-buttons-wrapper {
       display:inherit;
-      top: 45%;
+      top: 50%;
       left: 80%;
     }
 
@@ -782,7 +1003,9 @@ img.thumbnail {
     #home-responsive-mobile {
       display: initial;
       height: auto;
-      max-width: 21rem;
+      margin-right: 5rem;
+      margin-top:10rem;
+      max-width: 15rem;
       width: 100%;
     }
 
@@ -800,7 +1023,7 @@ img.thumbnail {
     }
 
     footer {
-      padding: 2rem 7rem 2rem 7rem;
+      padding: 2rem 10rem 2rem 10rem;
     }
 
     footer ul li {
@@ -819,7 +1042,7 @@ img.thumbnail {
       padding: 2rem 0;
     }
 
-  /* Biography Page */
+  /* ----- Biography Page ----- */
     main {
       padding: 1rem 9rem;
     }
@@ -849,30 +1072,35 @@ img.thumbnail {
       }
 
     #bio-container .bio-resume {
-      bottom: -60%;
-      left: 75%;
+      bottom: 115rem;
+      left: 77%;
       position: absolute;
     }
 
-    /* Contact Page */
+    /* ----- Contact Page ----- */
     #contact-container .responsive-hero {
       position: absolute;
-      right: 10%;
+      left: 80%;
+      margin-top: 7rem;
     }
 
     .call-to-action a {
       position: absolute;
-      left: 75%;
-      bottom: 5%;
+      left: 93%;
+      bottom: 40rem;
+    }
+
+    .call-to-action {
+      width: 60%;
     }
 
     #contact-container {
       margin: 0px;
-      padding-left: 9rem;
+      padding-left: 10rem;
     }
 
     section p {
-      width: 60%;
+      width: 55%;
     }
 
     #contact-form-wrapper {
@@ -890,4 +1118,173 @@ img.thumbnail {
     .submit {
       width: 60%;
     }
+
+    /* Nimbus Project */
+    main {
+      position: relative;
+      padding: 1rem 10rem;
+    }
+
+    .nimbus-phase-container {
+      margin: 10rem 2rem 0 2rem;
+    }
+
+    #project-header-container {
+      margin: 0 5rem;
+    }
+
+    #nimbus-final {
+      padding: 10rem 0;
+    }
+
+    #nimbus-quick {
+      padding-right: 5rem;
+    }
+
+    #prototype-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: 2rem;
+      margin-bottom: 10rem;
+    }
+
+    .desktop-prototype {
+      display: initial;
+    }
+
+    #overview-wrapper {
+      margin-top: 10rem;
+    }
+
+    .full-para {
+      width: 55%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .artifact-spacing {
+      margin-top: 5rem;
+    }
+
+    .phase-center {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #mobile-survey {
+      display: none;
+    }
+
+    #desktop-survey {
+      display: initial;
+    }
+
+    #survey-chart {
+      width: 80%;
+      height: auto;
+      max-width: 90rem;
+      display: block;
+      margin: auto;
+    }
+
+    #testing-wrapper {
+      display: flex;
+    }
+
+    #eduardo-persona {
+      display: block;
+    }
+
+    .motivation {
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+    }
+
+    .persona-wrapper {
+      display: flex;
+    }
+
+    .persona-overview p {
+      width: 100%;
+    }
+
+    #stories-flows-wrapper {
+      display:none;
+    }
+
+    #user-flow-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10rem 0;
+    }
+
+    .user-flow-img {
+      width: 100%;
+      height: auto;
+      max-width: 65rem;
+    }
+
+    #low-fi-video {
+      width: 70%;
+    }
+
+    #logos {
+      padding: 10rem 0;
+    }
+
+    .logo-img {
+      width:50%;
+    }
+
+    #prototype-wrapper {
+      display: flex;
+      justify-content: space-around;
+      margin: 5rem 0;
+    }
+
+    #desktop-proto-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 53rem;
+    }
+
+    #desktop-proto-img:hover {
+      opacity: .5;
+    }
+
+    #mobile-proto-img {
+      width: 70%;
+    }
+
+    .visual-description {
+      display: block;
+    }
+
+    .visual-container {
+      margin: 5rem 0;
+    }
+
+    .visual-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #nimbus-colors {
+      width: 75%;
+    }
+
+    .visual-wrapper p {
+      width: 55%;
+    }
+
+    #type-img {
+      position: relative;
+      bottom: 5rem;
+      left: 5rem;
+    }
+
   }
