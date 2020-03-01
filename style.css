@@ -961,7 +961,7 @@ img.thumbnail {
     }
 
     #type-img {
-    width: 65%;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1355,7 +1355,8 @@ img.thumbnail {
 
     #type-img {
       position: relative;
-      bottom: 5rem;
-      left: 5rem;
+      bottom: -5rem;
+      left: -1rem;
+      width: 50%;
     }
   }
