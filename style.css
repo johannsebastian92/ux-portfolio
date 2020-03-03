@@ -587,8 +587,8 @@ main {
 }
 
 .call-to-action {
-    padding-bottom: 0rem;
     padding-top: 6rem;
+    margin-bottom: 2rem;
 }
 
 .call-to-action a:hover {
@@ -754,10 +754,6 @@ img.thumbnail {
       display: inline;
     }
 
-    #looking-for {
-      height: 70vh;
-    }
-
     .call-to-action-buttons {
       padding: 0 20%;
     }
@@ -859,7 +855,7 @@ img.thumbnail {
     }
 
     #looking-for {
-      height: 65vh;
+      height: 100vh;
     }
 
     #cto-buttons-wrapper {
@@ -999,8 +995,8 @@ img.thumbnail {
 
     #cto-buttons-wrapper {
       display:inherit;
-      top: 50%;
-      left: 80%;
+      top: 45%;
+      left: 75%;
     }
 
     .call-to-action-buttons {
@@ -1053,7 +1049,7 @@ img.thumbnail {
     }
 
     #call-to-action p {
-      width: 75%;
+      width: 70%;
       padding-left: 10%;
     }
 
@@ -1066,7 +1062,7 @@ img.thumbnail {
     }
 
     #looking-for {
-      height: 60vh;
+      height: 75vh;
     }
 
     .looking-for-title {
