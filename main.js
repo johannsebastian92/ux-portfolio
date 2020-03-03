@@ -161,7 +161,7 @@ window.onload = function() {
         "I'm a Product Designer!",
         "I'm an Explorer!",
         "I love being by the water!",
-        "I love coffee and wine!"
+        "I love wine and coffee!"
       ],
       200
     );
