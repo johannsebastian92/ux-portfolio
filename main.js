@@ -157,11 +157,11 @@ window.onload = function() {
       typingElement,
       " ",
       [
-        "I am a Product Designer!",
-        "I am an Explorer!",
-        "I love coffee and wine!",
-        "I am a Miami Heat fan!",
-        "I love being by the water!"
+        "I'm a Miami Heat fan!",
+        "I'm a Product Designer!",
+        "I'm an Explorer!",
+        "I love being by the water!",
+        "I love coffee and wine!"
       ],
       200
     );

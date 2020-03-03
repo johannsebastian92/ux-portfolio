@@ -241,6 +241,7 @@ nav .links li a:active {
 #nimbus-study-container {
 margin: 0 2rem;
 padding-bottom: 4rem;
+padding-top: 4rem;
 }
 
 #home-responsive-dt {
@@ -636,6 +637,10 @@ textarea {
 }
 
 /* ----- Biography Styling ----- */
+.about-me {
+  min-height: 8rem;
+}
+
 .bio-header {
   font-size: 2.5rem;
   font-family: 'Yeseva One', cursive;
@@ -989,7 +994,7 @@ img.thumbnail {
     }
 
     #nimbus-study-container {
-      margin: 0 9rem;
+      margin: 4rem 9rem;
     }
 
     #cto-buttons-wrapper {
