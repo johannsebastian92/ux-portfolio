@@ -211,7 +211,7 @@ window.onresize = function() {
   }
 };
 
-/** Lightbox */
+/* Lightbox */
 (function() {
   const imageHolders = [];
   let images = getPageImages();
@@ -327,6 +327,3 @@ window.onresize = function() {
     });
   });
 })();
-
-
-/* Biography Photo Gallery */

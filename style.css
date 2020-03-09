@@ -33,6 +33,10 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  font-size: 2.5rem;
+}
+
 .yeseva-h1{
   font-size: 4rem;
   font-family: 'Yeseva One', cursive;
@@ -56,6 +60,32 @@ strong {
 header {
   height: 100vh;
 }
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 header #hero-img {
   background-image: url("./images/header-img.jpg");
@@ -350,7 +380,9 @@ main p{
 }
 
 .overview-title {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .title-spacing {
@@ -363,10 +395,6 @@ main p{
 
 li {
   list-style: none;
-}
-
-.artifact-title {
-  font-size: 2.5rem
 }
 
 .stat-spacing {
@@ -443,7 +471,6 @@ blockquote {
 #user-flow-wrapper {
   display: none;
 }
-
 /*----- Nimbus Wireframes ----- */
 #wireframe-sketches {
   display: none;
@@ -584,6 +611,13 @@ main {
 
 #contact-looking-for h1 {
   line-height: 1;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+#contact-looking-for p {
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 
 .call-to-action {
@@ -771,6 +805,10 @@ img.thumbnail {
       padding: 5rem 3rem;
       }
 
+    #contact-looking-for h1 {
+      margin-bottom: 2rem;
+    }
+
     /* ----- Nimbus Case Study ----- */
     #project-header-container {
       margin: 0 3rem;
@@ -860,6 +898,8 @@ img.thumbnail {
 
     #cto-buttons-wrapper {
       left: 40%;
+      animation-name: fadeIn;
+      animation-duration: 3fs;
     }
 
     .call-to-action-buttons {
@@ -927,8 +967,7 @@ img.thumbnail {
     #nimbus-quick {
       display: flex;
       justify-content: space-evenly;
-      margin-top: 10rem;
-      padding-right: 3rem;
+      padding: 5rem;
     }
 
     .overview {
@@ -972,6 +1011,7 @@ img.thumbnail {
 
   /* Media Query for Laptops and Desktops */
   @media (min-width: 1025px) {
+
     main p {
       width: 50%;
     }
@@ -1255,8 +1295,8 @@ img.thumbnail {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 10rem 0;
     }
+
 
     .user-flow-img {
       width: 100%;
@@ -1273,7 +1313,7 @@ img.thumbnail {
       margin-bottom: 5rem;
       margin-left: auto;
       margin-right: auto;
-      max-width: 70rem;
+      max-width: 85rem;
       width: 100%;
     }
 
@@ -1315,7 +1355,7 @@ img.thumbnail {
     #prototype-wrapper {
       display: flex;
       justify-content: space-evenly;
-      margin: 5rem 0;
+      margin: 10rem 0 4rem 0;
     }
 
     #desktop-proto-img {
