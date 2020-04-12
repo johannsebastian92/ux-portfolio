@@ -54,38 +54,17 @@ h4 {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 header {
   height: 100vh;
 }
 
-/* Animations */
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+#logo {
+  width: 13rem;
+  height: 7.5rem;
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 
 header #hero-img {
   background-image: url("./images/header-img.jpg");
@@ -198,7 +177,6 @@ nav .links li a:active {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
   padding: 1rem;
   text-align: center;
   text-decoration: none;
@@ -268,6 +246,26 @@ nav .links li a:active {
   padding-bottom: 2rem;
 }
 
+#worth-case-study {
+  margin: 0 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+#worth-mobile-home {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 53rem;
+  padding: 4rem 0 0 0;
+  width: 50%;
+}
+
+#worth-case-study p {
+  width: 33rem;
+}
+
 #nimbus-study-container {
 margin: 0 2rem;
 padding-bottom: 4rem;
@@ -323,7 +321,7 @@ footer ul {
 }
 
 footer ul li {
-  padding: 0 .5rem;
+  padding: 0 1rem;
   align-items: center;
 }
 
@@ -386,7 +384,11 @@ main p{
 }
 
 .title-spacing {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.title-spacing2 {
+  margin-bottom: .5rem;
 }
 
 .artifact-spacing {
@@ -609,17 +611,6 @@ main {
   padding: 5rem 2rem;
 }
 
-#contact-looking-for h1 {
-  line-height: 1;
-  animation-name: fadeIn;
-  animation-duration: 2s;
-}
-
-#contact-looking-for p {
-  animation-name: fadeIn;
-  animation-duration: 2s;
-}
-
 .call-to-action {
     padding-top: 6rem;
     margin-bottom: 2rem;
@@ -746,7 +737,163 @@ img.thumbnail {
 	}*/
 
 
+  /* Worth Case Study */
+  .title {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .container2 {
+    margin: 10rem 2rem;
+  }
+
+  .container3{
+    margin: 5rem 0;
+  }
+
+  .center-text {
+    text-align: center;
+  }
+
+  img {
+    margin: 2rem 0;
+  }
+
+  .container3 h3 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .flex-container h3 {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .container2 p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .container2 ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #final-img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .result-chart {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #comp-ana {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wire-sketch {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #low-wire {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #moodboard {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .type {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #colors {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feedback {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #improve-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+  }
+
+  .prototype {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 @media (max-width: 480px) {
+  #logo {
+    width: 10rem;
+    height: 6rem;
+  }
+
+  #worth-case-study {
+    margin: 0 2rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+  }
+
   .nav-bar {
     align-items: center;
     display: flex;
@@ -763,7 +910,7 @@ img.thumbnail {
   }
 
   #low-fi-video {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -777,6 +924,12 @@ img.thumbnail {
 
    .rec-button {
      width: 50%;
+   }
+
+   #worth-case-study {
+     margin: 0 2rem;
+     padding-bottom: 4rem;
+     padding-top: 4rem;
    }
 
     #hero-text p {
@@ -858,7 +1011,7 @@ img.thumbnail {
     }
 
     #low-fi-video {
-      width: 80%;
+      width: 100%;
       height: auto;
       margin-left: auto;
       margin-right: auto;
@@ -872,6 +1025,56 @@ img.thumbnail {
       padding: 2rem 0;
     }
 
+    /* Worth Case Study */
+    .container2 {
+      margin: 10rem 5rem;
+    }
+
+    #final-img {
+      width: 70%;
+    }
+
+    .mobile-only {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .result-chart {
+      width: 95%;
+    }
+
+    #comp-ana {
+      width: 90%
+    }
+
+    .wire-sketch {
+      width: 70%
+    }
+
+    .logo {
+      width: 75%;
+    }
+
+    .type {
+      width: 75%;
+    }
+
+    #colors {
+      width: 75%;
+    }
+
+    .feedback {
+    width: 60%;
+    }
+
+    #improve-mobile {
+      width: 60%;
+    }
+
+    .prototype {
+      width: 40%;
+    }
   }
 
 
@@ -914,6 +1117,10 @@ img.thumbnail {
       padding: 0 1.5rem;
     }
 
+    #worth-mobile-home {
+      width: 30%;
+    }
+
     #nimbus-study-container p {
       width: 33rem
     }
@@ -944,11 +1151,6 @@ img.thumbnail {
     #contact-container {
       width: 75%;
       margin: auto;
-    }
-
-    .call-to-action {
-    padding-bottom: 3rem;
-    padding-top: 5rem;
     }
 
     /* ----- Nimbus Project ----- */
@@ -1006,6 +1208,122 @@ img.thumbnail {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /*Worth Case Study*/
+    .container2 {
+      margin: 10rem 5rem;
+    }
+
+    .container2 p {
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .flex-container h3 {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .mobile-only{
+      display: none;
+    }
+
+    .desktop-only {
+      display: block;
+    }
+
+    .desktop-header {
+      width: 100%;
+    }
+
+    #worth-overview {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: stretch;
+      justify-content: center;
+      height: 100%;
+    }
+
+    #worth-overview div {
+      width: 30%;
+    }
+
+    #final-img {
+      width: 40%;
+      padding: 1rem;
+    }
+
+    .result-chart{
+      width: 80%;
+      padding: 1rem;
+    }
+
+    #comp-ana {
+      width: 70%;
+    }
+
+    #personas {
+      width: 100%;
+    }
+
+    #empathy-map {
+      width: 100%;
+    }
+
+    #stories-flows {
+      width: 100%;
+    }
+
+    #sitemap {
+      width: 100%;
+    }
+
+    .wire-sketch {
+      padding: 1rem;
+    }
+
+    #low-wire {
+      width: 80%;
+    }
+
+    .feedback {
+      width: 90%;
+    }
+
+    .type {
+      padding: 1rem;
+    }
+
+    #low-fi-video {
+      width: 80%;
+    }
+
+    #improve-mobile {
+      display: none;
+    }
+
+    #improve-desktop {
+      width: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .prototype {
+      width: 55%;
+    }
+
+    .flex-img {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      justify-content: center;
+    }
 }
 
 
@@ -1027,6 +1345,20 @@ img.thumbnail {
     #hero-text p {
       padding-left: 30%;
       padding-right: 30%;
+    }
+
+    #worth-case-study {
+      margin: 4rem 9rem;
+      padding-bottom: 4rem;
+      padding-top: 4rem;
+    }
+
+    #worth-mobile-home {
+      width: 50%;
+    }
+
+    #worth-mobile-home:hover {
+      opacity: .5;
     }
 
     #nimbus-study-container {
@@ -1155,6 +1487,11 @@ img.thumbnail {
 
     .bio-resume {
       margin-top: 5rem;
+    }
+
+    .call-to-action {
+        padding-top: 0rem;
+        margin-bottom: 2rem;
     }
 
     #contact-container {
@@ -1396,8 +1733,109 @@ img.thumbnail {
 
     #type-img {
       position: relative;
-      bottom: -5rem;
+      bottom: -1rem;
       left: -1rem;
       width: 50%;
+    }
+
+    /*Worth Case Study*/
+    .container2 {
+      margin: 10rem 10rem;
+    }
+
+    .container2 p {
+      width: 60%;
+    }
+
+    .container2 ul {
+      width: 60%;
+    }
+
+    .container3 h3 {
+      width: 60%;
+    }
+
+    /*.flex-img {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      justify-content: center;
+    }*/
+
+    #final-img {
+      margin: 2rem 1rem;
+    }
+
+    #personas {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    #empathy-map {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    #stories-flows {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .result-chart {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      width: 65%;
+    }
+
+    #sitemap {
+      width: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo {
+      margin: 3rem 3rem;
+      width: 35%;
+    }
+
+    .type {
+      padding: 0 1rem;
+    }
+
+    #low-wire {
+      width: 70%;
+    }
+
+    #moodboard {
+      width: 70%;
+    }
+
+    #colors {
+      width: 50%;
+    }
+
+    #improve-desktop {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    #low-fi-video {
+      width: 80%;
+    }
+
+    .prototype {
+      width: 60%;
     }
   }
