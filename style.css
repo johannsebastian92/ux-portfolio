@@ -764,7 +764,7 @@ img.thumbnail {
   }
 
   .container3 h3 {
-    width: 80%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -865,6 +865,10 @@ img.thumbnail {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .desktop-only {
+    display: none;
   }
 
   #improve-mobile {
@@ -1054,6 +1058,7 @@ img.thumbnail {
 
     .logo {
       width: 75%;
+      padding: 1rem;
     }
 
     .type {
@@ -1221,12 +1226,16 @@ img.thumbnail {
       margin-right: auto;
     }
 
+    .container3 h3 {
+      width: 80%;
+    }
+
     .flex-container h3 {
-      width: 50%;
+      width: 30%;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
     }
 
     .mobile-only{
@@ -1259,7 +1268,7 @@ img.thumbnail {
     }
 
     .result-chart{
-      width: 80%;
+      width: 56%;
       padding: 1rem;
     }
 
@@ -1296,6 +1305,7 @@ img.thumbnail {
     }
 
     .type {
+      width: 56%;
       padding: 1rem;
     }
 
@@ -1354,7 +1364,7 @@ img.thumbnail {
     }
 
     #worth-mobile-home {
-      width: 50%;
+      width: 25%;
     }
 
     #worth-mobile-home:hover {
@@ -1382,7 +1392,7 @@ img.thumbnail {
     }
 
     .flex-container {
-      margin-top: 5rem;
+      margin-top: 3rem;
     }
 
     #nimbus-study-container p {
@@ -1755,6 +1765,11 @@ img.thumbnail {
       width: 60%;
     }
 
+    .flex-container h3 {
+      width: 30%;
+      margin: 1rem 3rem;
+    }
+
     /*.flex-img {
       display: flex;
       flex-direction: row;
@@ -1806,7 +1821,7 @@ img.thumbnail {
     }
 
     .logo {
-      margin: 3rem 3rem;
+      margin: 3rem 1rem;
       width: 35%;
     }
 
@@ -1837,5 +1852,9 @@ img.thumbnail {
 
     .prototype {
       width: 60%;
+    }
+
+    .prototype:hover {
+      opacity: .5;
     }
   }
