@@ -266,6 +266,32 @@ nav .links li a:active {
   width: 33rem;
 }
 
+#resume-app-container {
+  margin: 0 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+ #resume-app {
+   display: block;
+   height: auto;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 53rem;
+   padding: 4rem 0 0 0;
+   width: 60%;
+ }
+
+ #resume-app:hover {
+   opacity: 0.5;
+ }
+
+
+#resume-app-container p {
+  width: 30rem;
+}
+
+
 #nimbus-study-container {
 margin: 0 2rem;
 padding-bottom: 4rem;
@@ -1123,7 +1149,7 @@ img.thumbnail {
     }
 
     #worth-mobile-home {
-      width: 30%;
+      width: 40%;
     }
 
     #nimbus-study-container p {
@@ -1134,6 +1160,10 @@ img.thumbnail {
       margin-left: auto;
       margin-right: auto;
       width: 60%;
+    }
+
+    #resume-app {
+      width: 40%;
     }
 
     /*----- Biography Page -----*/
@@ -1369,6 +1399,14 @@ img.thumbnail {
 
     #worth-mobile-home:hover {
       opacity: .5;
+    }
+
+    #resume-app {
+      width: 25%;
+    }
+
+    #resume-app-container p {
+      width: 33rem;
     }
 
     #nimbus-study-container {
