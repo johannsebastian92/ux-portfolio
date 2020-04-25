@@ -785,14 +785,6 @@ img.thumbnail {
     text-align: center;
   }
 
-  img {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
   .container3 h3 {
     width: 100%;
     display: block;
