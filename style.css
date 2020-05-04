@@ -292,6 +292,31 @@ nav .links li a:active {
   width: 30rem;
 }
 
+#craigslist-container {
+  margin: 0 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+#craigslist-container p {
+  width: 30rem;
+}
+
+#craigslist-redesign-img {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem;
+  padding: 4rem 0 0 0;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+#craigslist-redesign-img:hover {
+  opacity: 0.5;
+}
+
 
 #nimbus-study-container {
 margin: 0 2rem;
